@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "875aa2f002ab4e8e0d6e9d8a31795cb0",
+      "MD5-CAM-1.0.1" : "4c4e46da95570910713e33b7a8e098cf",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -1613,6 +1613,44 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0028.4",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.9" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_BOOLEAN",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0041.1",
                       "attributes" : [ ],
@@ -1765,6 +1803,13 @@
             "text" : "Specific interventions outside of ICU – surgery or diagnostic procedures.",
             "description" : "Is there a history of any past procedures relevant for the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.4",
+            "text" : "Hemofiltration techniques – dialytic techniques.",
+            "description" : "Is there a history of any past procedures relevant for the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           }
         },
         "nb" : {
@@ -1797,6 +1842,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Noen tidligere prosedyrer? (3)",
+            "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Noen tidligere prosedyrer? (4)",
             "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
@@ -1833,6 +1885,13 @@
             "text" : "Irgendwelche frühere Prozeduren? (3)",
             "description" : "Gibt es eine Vorgeschichte von früheren Prozeduren, die für den Screening-Zweck relevant sind?",
             "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Irgendwelche frühere Prozeduren? (4)",
+            "description" : "Gibt es eine Vorgeschichte von früheren Prozeduren, die für den Screening-Zweck relevant sind?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
           }
         },
         "it" : {
@@ -1865,6 +1924,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "*Any previous procedures? (en) (3)",
+            "description" : "*Is there a history of any past procedures relevant for the screening purpose? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "*Any previous procedures? (en) (4)",
             "description" : "*Is there a history of any past procedures relevant for the screening purpose? (en)",
             "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           }
@@ -1901,6 +1967,13 @@
             "text" : "Y a-t-il eu des procédures antérieures ? (3)",
             "description" : "Existe-t-il des antécédents de procédures antérieures en rapport avec l'objectif du dépistage ?",
             "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Y a-t-il eu des procédures antérieures ? (4)",
+            "description" : "Existe-t-il des antécédents de procédures antérieures en rapport avec l'objectif du dépistage ?",
+            "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
           }
         },
         "ca" : {
@@ -1935,6 +2008,13 @@
             "text" : "Hi ha algun procediment previ? (3)",
             "description" : "Hi ha algun historial de procediments anteriors rellevants per a l'objectiu de la detecció?",
             "comment" : "En una plantilla, l'element de dades normalment es canviaria el nom a la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a l'ús local utilitzant el DV_TEXT o l'elecció dels tipus de dades DV_BOOLEAN per a cada cas d'ús específic."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Hi ha algun procediment previ? (4)",
+            "description" : "Hi ha algun historial de procediments anteriors rellevants per a l'objectiu de la detecció?",
+            "comment" : "En una plantilla, l'element de dades normalment es canviaria el nom a la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a l'ús local utilitzant el DV_TEXT o l'elecció dels tipus de dades DV_BOOLEAN per a cada cas d'ús específic."
           }
         },
         "es" : {
@@ -1967,6 +2047,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "¿Algún procedimiento previo? (3)",
+            "description" : "¿Existen antecedentes de algún procedimiento previo que sea relevante para el propósito de la evaluación?",
+            "comment" : "En una plantilla, el elemento de datos normalmente se renombraría según la pregunta específica formulada. El conjunto de valores propuesto puede adaptarse para uso local mediante los tipos de datos DV_TEXT o DV_BOOLEAN para cada caso de uso específico."
+          },
+          "at0028.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "¿Algún procedimiento previo? (4)",
             "description" : "¿Existen antecedentes de algún procedimiento previo que sea relevante para el propósito de la evaluación?",
             "comment" : "En una plantilla, el elemento de datos normalmente se renombraría según la pregunta específica formulada. El conjunto de valores propuesto puede adaptarse para uso local mediante los tipos de datos DV_TEXT o DV_BOOLEAN para cada caso de uso específico."
           }
@@ -2013,6 +2100,11 @@
         "ac0.8" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
           "members" : [ "at0031", "at0032" ]
         }
       }
