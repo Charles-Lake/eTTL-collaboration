@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "49168c071516dbd798086b48cfb92d64",
+      "MD5-CAM-1.0.1" : "0859ae118105c3ed333696b133014cd8",
       "PARENT:MD5-CAM-1.0.1" : "6AFDF4A34EB96917079AC64DB5F65463"
     },
     "details" : {
@@ -425,7 +425,101 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "189016652B796FD2552171C762A5602E"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen zur Anwendung eines bestimmten Medikaments oder einer Medikamentengruppe.",
+          "keywords" : [ "Medikation, Screening, Fragebogen, Medikament, Arzneimittel, Behandlung" ],
+          "use" : "Verwendung als Rahmenbedingung für die Darstellung von Antworten auf vordefinierte Screening-Fragen zur Anwendung eines bestimmten Medikaments oder einer Medikamentengruppe (einschließliche Medikamentenkasse).\r\n\r\nBeispiele für Medikamente, Gruppierungen und Klassen von Medikamenten sind „Alendronsäure“, „Osteoporose-Medikamente“ bzw. „Bisphosphonate“.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\n- Systematische Befragung in jedem Beratungsgespräch zu dem Medikamenteneinnahme-Verhalten, zum Beispiel:\r\n--- Verwenden Sie Paracetamol? Ja, Nein, Unbekannt.\r\n--- Haben Sie in den letzten vier Wochen Antikoagulanzien verwendet? Ja, Nein, Unbekannt.\r\n\r\nDie Semantik dieses Archetyps ist absichtlich locker, und die Abfrage dieses Archetyps wäre normalerweise nur im Kontext jedes spezifischen Templates nützlich oder sicher. In einem Template würde normalerweise jedes Datenelement in die spezifische gestellte Frage umbenannt. Wo Wertesätze für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese für die lokale Verwendung angepasst werden, indem die „Text“-Auswahl verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nÜber die EVENT-Struktur aus dem Referenzmodell kann festgelegt werden, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einer Befragung zu unterscheiden, der Informationen über ein Medikament enthält, das zu einem beliebigen Zeitpunkt in der Vergangenheit angewendet wurde, und Informationen über ein Medikament, das innerhalb eines bestimmten Zeitintervalls durchgeführt wurde - zum Beispiel den Unterschied zwischen \"Verwenden Sie Paracetamol? \" im Vergleich zu \"Haben Sie in den letzten vier Wochen Antikoagulanzien verwendet?\".\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen das Vorhandensein eines Medikaments identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über das Medikament unter Verwendung eines relevanten Medikations-Archetyps darstellt und beibehält, zum Beispiel das OBSERVATION.medication_statement, um eine detaillierte Momentaufnahme über die tatsächliche Verwendung des spezifischen Medikaments darzustellen.",
+          "misuse" : "Nicht zur Darstellung einer Anforderung für ein zu verabreichendes oder zu konsumierendes Medikament zu verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.medication_order.\r\n\r\nNicht zur Darstellung der Verabreichung, Abgabe oder Einnahme eines Medikaments verwenden - verwenden Sie ACTION.medication für diesen Zweck.\r\n\r\nNicht zur Darstellung einer Zusammenfassung der Verwendung eines Medikaments über die Lebenszeit der Person zu verwenden – verwenden Sie zu diesem Zweck EVALUATION.medication_summary.\r\n\r\nDarf nicht verwendet werden, um eine detaillierte Momentaufnahme über die tatsächliche Verwendung eines einzelnen angegebenen Medikaments außerhalb eines Screening-Kontexts darzustellen. - Verwenden Sie zu diesem Zweck OBSERVATION.medication_statement.\r\n\r\nDarf nicht verwendet werden, um Details über das Fehlen eines bestimmten Medikaments oder einer Medikamentengruppe außerhalb eines Screening-Kontexts darzustellen. Verwenden Sie zu diesem Zweck EVALUATION.exclusion_specific.\r\n\r\nNicht zu verwenden, um einen Rahmen für die Darstellung von Antworten auf vordefinierte Screening-Fragen zu Nebenwirkungen zu schaffen, verwenden Sie zu diesem Zweck einen geeigneten Archetyp.\r\n\r\nDarf nicht verwendet werden, um Details zu einer einfachen Auswahlliste darzustellen, in der eine Frage entweder als \"vorhanden\" oder \"unbestimmt\" aufgezeichnet werden kann. Verwenden Sie dazu OBSERVATION.selection_list.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilket som helst legemiddel eller gruppe av legemidler.",
+          "keywords" : [ "legemiddel, kartlegging, spørreskjema, legemiddelgruppe, medikament" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilket som helst legemiddel eller gruppe av legemidler.\r\n\r\nEksempler på legemidler, grupper og klasser av legemidler er \"alendronsyre\", \"osteoporosemedisiner\" og \"bisfosfonater\".\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Bruker du paracetamol? Ja, Nei, Ukjent.\r\n--- Har du brukt noen blodfortynnende medisiner de siste 4 ukene? Ja, Nei, Ukjent.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om bruk av et legemiddel på et hvilket som helst tidspunkt og spørsmål om legemidler som er brukt i et tidsintervall. For eksempel; \"Bruker du paracetamol nå?\" sammenlignet med \"Har du brukt noen smertestillende medisin de siste 4 ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at et legemiddel er tilstede, anbefales det at spesifikke detaljer om legemiddelet registreres og lagres i pasientjournalen i en egnet legemiddelarketype, for eksempel arketypen OBSERVATION.medication_statement for å registrere et detaljert øyeblikksbilde om bruken av et enkelt spesifisert legemiddel.",
+          "misuse" : "Brukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere administreringen av et legemiddel - bruk arketypen ACTION.medication (Legemiddelhåndtering) til dette formålet.\r\n\r\nBrukes ikke for å registrere et sammendrag om all bruk av et spesifisert legemiddel over et individs livstid, bruk arketypen EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.\r\n\r\nBrukes ikke for å registrere et detaljert øyeblikksbilde om bruken av et enkelt spesifisert legemiddel, utenfor konteksten av kartleggingen. Bruk arketypen OBSERVATION.medication_statement for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om etablert fravær av et spesifikt legemiddel eller gruppe av legemidler i pasientjournalen, utenfor konteksten av kartleggingen. Bruk arketypen EVALUATION.exclusion_specific for dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om overfølsomhetsreaksjoner, bruk en egnet arketype for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF, openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications.",
+          "keywords" : [ "medication, screening, questionnaire, drug, treatment" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping (including classes) of medications.\r\n\r\nExamples of medications, groupings and classes of medications are 'alendronic acid', 'anti osteoporosis medications' and 'bisphosphonates', respectively.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation related to patterns of medication usage, for example:\r\n--- Do you use paracetamol? Yes, No, Unknown.\r\n--- Have you been using any anticoagulants the last four weeks? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a medication that has been used at any time in the past and information about a medication used within a specified time interval - for example the difference between \"Do you use paracetamol?\" compared to \"Have you been using any anticoagulants during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a medication it is recommended that clinical system record and persist the specific details about the medication using a relevant medication archetype, for example the OBSERVATION.medication_statement to record a detailed snapshot view about the actual use of a single specified medication.",
+          "misuse" : "Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used for recording the administration, dispensing or consumption of a medication - use ACTION.medication for this purpose.\r\n\r\nNot to be used for recording a summary of use of a medication over the lifetime of the individual - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record a detailed snapshot view about the actual use of a single specified medication, outside of a screening context. - use OBSERVATION.medication_statement for this purpose.\r\n\r\nNot to be used to record details about the positive absence of a specific medication or grouping of medication, outside of a screening context. Use EVALUATION.exclusion_specific for this purpose.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo de medicamentos específico.",
+          "keywords" : [ "medicación, cribado, cuestionario, fármaco, tratamiento" ],
+          "use" : "Úselo para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo (incluidas clases) de medicamentos específicos.\r\n\r\nEjemplos de medicamentos, grupos y clases de medicamentos son \"ácido alendrónico\", \"medicamentos contra la osteoporosis\" y \"bifosfonatos\", respectivamente.\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de uso de medicamentos, por ejemplo:\r\n--- ¿Usas paracetamol? Sí, No, Desconocido.\r\n--- ¿Ha estado usando algún anticoagulante en las últimas cuatro semanas? Sí, No, Desconocido.\r\n\r\nLa semántica de este arquetipo es intencionalmente en líneas generales y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. En una plantilla, a cada elemento de datos normalmente se le cambiaría el nombre según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.\r\n\r\nLa estructura EVENTO del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un medicamento que se ha usado en cualquier momento en el pasado e información sobre un medicamento usado dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Usa paracetamol?\", en comparación con \"¿Ha estado usando algún anticoagulante durante las últimas cuatro semanas?\".\r\n\r\nLa fuente de información en una respuesta al cuestionario puede variar en diferentes contextos, pero se puede identificar específicamente utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.\r\n\r\nEste arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario de detección identifica la presencia de un medicamento, se recomienda que el sistema clínico registre y mantenga los detalles específicos sobre el medicamento utilizando un arquetipo de medicamento relevante, por ejemplo OBSERVATION.medication_statement para registrar una vista instantánea detallada sobre el uso real de un solo medicamento especificado.",
+          "misuse" : "No debe usarse para registrar una orden de administración o consumo de un medicamento; usar INSTRUCTION.medication_order para este propósito.\r\n\r\nNo debe usarse para registrar la administración, dispensación o consumo de un medicamento; usar ACTION.medication para este propósito.\r\n\r\nNo debe usarse para registrar un resumen del uso de un medicamento durante la vida del individuo; usar EVALUATION.medication_summary para este propósito.\r\n\r\nNo debe utilizarse para registrar una instantánea detallada del uso real de un único medicamento específico, fuera de un contexto de detección. - usar OBSERVATION.medication_statement para este fin.\r\n\r\nNo debe utilizarse para registrar detalles sobre la ausencia positiva de un medicamento o grupo de medicamentos específico, fuera de un contexto de detección. Utilice EVALUATION.exclusion_specific para este propósito.\r\n\r\nNo debe utilizarse para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre reacciones adversas, utilice un arquetipo apropiado para este propósito.\r\n\r\nNo debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta puede registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear un marc per registrar les respostes a preguntes de cribratge predefinides sobre l'ús de qualsevol medicament o agrupació de medicaments especificats.",
+          "keywords" : [ "medicació, cribratge, qüestionari, fàrmac, tractament" ],
+          "use" : "Utilitzeu-lo per crear un marc per registrar les respostes a preguntes de cribratge predefinides sobre l'ús de qualsevol medicament o agrupació (incloses les classes) de medicaments especificats.\r\n\r\nExemples de medicaments, agrupacions i classes de medicaments són \"àcid alendrònic\", \"medicaments contra l'osteoporosi\" i \"bifosfonats\", respectivament.\r\n\r\nEls casos d'ús habituals inclouen, però no es limiten a:\r\n- Qüestionament sistemàtic en qualsevol consulta relacionada amb patrons d'ús de medicaments, per exemple:\r\n--- Fas servir paracetamol? Sí, no, desconegut.\r\n--- Heu fet servir algun anticoagulant les últimes quatre setmanes? Sí, no, desconegut.\r\n\r\nLa semàntica d'aquest arquetip és intencionadament en línies generals, i la consulta d'aquest arquetip normalment només seria útil o segura en el context de cada plantilla específica. En una plantilla, cada element de dades normalment es canviaria de nom a la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús habituals, aquests es poden adaptar per a l'ús local mitjançant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN per fer coincidir cada cas d'ús específic.\r\n\r\nL'estructura EVENT del model de referència es pot utilitzar per especificar si les preguntes es relacionen amb un punt en el temps o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que registra informació sobre un medicament que s'ha utilitzat en qualsevol moment en el passat i informació sobre un medicament utilitzat dins d'un interval de temps especificat, per exemple, la diferència entre \"Feu servir paracetamol?\" en comparació amb \"Has estat utilitzant algun anticoagulant durant les últimes quatre setmanes?\".\r\n\r\nLa font de la informació en una resposta al qüestionari pot variar en diferents contextos, però es pot identificar específicament mitjançant l'element \"Proveïdor d'informació\" del model de referència.\r\n\r\nAquest arquetip ha estat dissenyat per ser utilitzat com a eina de cribratge o per registrar dades senzilles en format de qüestionari per utilitzar-les en situacions com ara un registre de malalties. Si el qüestionari de detecció identifica la presència d'un medicament, es recomana que el sistema clínic enregistri i persisteixi els detalls específics sobre el medicament mitjançant un arquetip de medicament rellevant, per exemple, la declaració OBSERVATION.medication_statement per registrar una visualització instantània detallada sobre l'ús real d'una única medicació especificada.",
+          "misuse" : "No s'ha d'utilitzar per registrar una comanda d'un medicament que s'ha d'administrar o consumir; utilitzeu INSTRUCTION.medication_order per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar l'administració, la dispensació o el consum d'un medicament - utilitzar ACTION.medication per a aquesta finalitat.\r\n\r\nNo s'ha d'utilitzar per registrar un resum de l'ús d'un medicament al llarg de la vida de l'individu; utilitzeu EVALUATION.medication_summary per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per gravar una instantània detallada sobre l'ús real d'un únic medicament especificat, fora d'un context de detecció. - utilitzeu OBSERVATION.medication_statement per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar detalls sobre l'absència positiva d'un medicament o agrupació de medicaments específics, fora d'un context de cribratge. Utilitzeu EVALUATION.exclusion_specific per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per crear un marc per registrar les respostes a preguntes de cribratge predefinides sobre reaccions adverses, utilitzeu un arquetip adequat per a aquest propòsit.\r\n\r\nNo s'ha d'utilitzar per registrar detalls sobre una llista de selecció simple on una pregunta es pot registrar com a \"present\" o \"indeterminada\". Utilitzeu OBSERVATION.selection_list per a aquest propòsit.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about the use of a any medication. (en)",
+          "keywords" : [ "*medication, screening, questionnaire, drug, treatment (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping (including classes) of medications.\r\n\r\nExamples of medications, groupings and classes of medications are 'alendronic acid', 'anti osteoporosis medications' and 'bisphosphonates', respectively.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Systematic questioning in any consultation related to patterns of medication usage , for example:\r\n--- Do you use paracetamol? Yes, No, Unknown.\r\n--- Have you been using any anticoagulants the last four weeks? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Do you use paracetamol?\" compared to \"Have you been using any anticoagulants the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a medication it is recommended that clinical system record and persist the specific details about the medication using a relevant medication archetype, for example the OBSERVATION.medication_statement to record a detailed snapshot view about the actual use of a single specified medication. (en)",
+          "misuse" : "*Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used for recording the administration, dispensing or consumption of a medication - use ACTION.medication for this purpose.\r\n\r\nNot to be used for recording a summary of use of a medication over the lifetime of the individual - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record a detailed snapshot view about the actual use of a single specified medication, outside of a screening context. - use OBSERVATION.medication_statement for this purpose.\r\n\r\nNot to be used to record details about the positive absence of a specific medication or grouping of medication, outside of a screening context. Use EVALUATION.exclusion_specific for this purpose.\r\n\r\nNot to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.medication_screening.v1",
     "differential" : true,
@@ -955,7 +1049,86 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "B8C2E96DB0A27622D7007F276769C10E"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Schaffung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zu diagnostischen Untersuchungen oder einer Gruppe von Untersuchungen, einschließlich, aber nicht beschränkt auf bildgebende Untersuchungen und Labortests.",
+          "keywords" : [ "Untersuchung, Screening, Fragebogen, Prävention, Bildgebung, Labor, Pathologie, Blut, Probe, Sputum, EMG, EKG, Gehör, Test, Untersuchung, Rückenmarksflüssigkeit, Biopsie, EEG, MRI, CT, Röntgen, PET, Ultraschall, Spirometrie" ],
+          "use" : "Dient zur Erstellung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zu diagnostischen Untersuchungen oder Gruppen von Untersuchungen. Der Umfang der diagnostischen Untersuchungen umfasst alle Arten von bildgebenden Untersuchungen und das breiteste Spektrum an Labor- und anatomisch-pathologischen Tests. Darüber hinaus kann dieser Archetyp auch verwendet werden, um zu erfassen, wann andere diagnostische Tests durchgeführt wurden, wie z. B. Herzbelastungstests, Hör- und Sehtests, Elektrokardiographie (EKG) und Elektroenzephalographie (EEG).\r\n\r\nHäufige Anwendungsfälle sind unter anderem:\r\n- Selbstauskunft der Patienten\r\n- Erstellung eines Patientenprofils in einem Krankheitsregister\r\n- Systematische Befragung im Rahmen einer Konsultation in Bezug auf die Verabreichung von Untersuchungsmethoden\r\n\r\nDie Semantik dieses Archetyps ist absichtlich offen formuliert, und eine Abfrage dieses Archetyps wäre normalerweise nur im Kontext der jeweiligen Vorlage sinnvoll oder sicher. Jedes Datenelement würde in der Regel in einer Vorlage umbenannt, um die spezifische Frage zu repräsentieren. Falls Wertesätze für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese an die lokalen Anforderungen angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN verwendet werden, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nDie Verwendung dieses Schemas innerhalb einer Vorlage ermöglicht die Dokumentation eines breiten Spektrums von Frage/Antwort-Paaren wie z. B.:\r\n- Haben Sie jemals Ihren Cholesterinspiegel testen lassen? Ja, Nein, Unbekannt.\r\n- Wurden Sie auf Röteln-Antikörper getestet? Ja, Nein, Unbekannt.\r\n- Wurden Sie jemals auf Sichelzellenanämie untersucht? Ja, Nein, Unbekannt.\r\n- Wann war Ihre letzte Röntgenaufnahme der Brust?\r\n- Wie lautete das Ergebnis Ihres letzten INR-Tests?\r\n- Wie lautete der Befund des Elektrokardiogramms?\r\n- Hat der Säugling ein Neugeborenen-Hörscreening bestanden/nicht bestanden?\r\n\r\nDie EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Fragen auf einen Zeitpunkt oder einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einem Fragebogen, der Informationen über eine Untersuchung oder einen Test aufzeichnet, die/der zu einem beliebigen Zeitpunkt in der Vergangenheit durchgeführt wurde, und Informationen über eine Untersuchung oder einen Test, die/der innerhalb eines bestimmten Zeitraums durchgeführt wurde, zu unterscheiden - z. B. der Unterschied zwischen \"Hatten Sie jemals einen INR-Test?\" im Vergleich zu \"Hatten Sie in den letzten vier Wochen einen INR-Test?\"\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann aber mit Hilfe des Elements \"Information provider\" im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Instrument verwendet zu werden oder um einfache Fragebogen-Daten für Situationen wie ein Krankheitsregister aufzuzeichnen. Wenn der Screening-Fragebogen angibt, dass eine Untersuchung durchgeführt wurde, können zusätzliche Details, die für die Speicherung in einer klinischen Akte erforderlich sind, mithilfe spezifischer Archetypen für Testergebnisse erfasst werden.",
+          "misuse" : "Nicht für die Aufzeichnung eines Untersuchungsauftrags zu verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.service_request.\r\n\r\nNicht für die Aufzeichnung des Fortschritts von Aktivitäten, die als Teil einer Untersuchung durchgeführt werden, zu verwenden - verwenden Sie zu diesem Zweck entsprechende ACTION-Archetypen.\r\n\r\nNicht für die Aufzeichnung formaler diagnostischer Testergebnisse zu verwenden - verwenden Sie zu diesem Zweck geeignete OBSERVATIONS. Zum Beispiel die OBSERVATION.laboratory_test_result oder OBSERVATION.imaging_examination_result.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om diagnostiske undersøkelser eller gruppe av undersøkelser. Dette inkluderer, men er ikke begrenset til bildediagnostiske undersøkelser og laboratorieundersøkelser.",
+          "keywords" : [ "utredning", "undersøkelse", "kartlegging", "spørreskjema", "forebygging", "bildediagnostikk", "laboratorie", "patologi", "blodprøve", "sputum", "EMG", "EKG", "EEG", "MR", "CT", "røntgen", "PET", "spirometri", "EKKO", "billeddiagnostikk", "ultralyd", "vevsprøve", "hørseltest", "synstest" ],
+          "use" : "Bruk for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruk av en spesifisert diagnostisk undersøkelse eller gruppering av undersøkelser. Omfanget av diagnostiske undersøkelser inkluderer alle modaliteter av bildediagnostiske undersøkelser og den videste definisjonen av laboratorie- og patologiprøver. I tillegg kan arketypen brukes til å registrere om andre diagnostiske undersøkelser har vært gjort, som belastnings-EKG, hørsel- eller synstest eller ECG.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Selvrapportering av pasienter\r\n- Til en pasientprofil i et register for sykdommer\r\n- Systematiske spørsmål i enhver konsultasjon, relatert til administrasjon av undersøkelser\r\n\r\nSemantikken til denne arketypen er med vilje løs, og å spørre etter denne arketypen vil normalt bare være nyttig eller trygt innenfor konteksten til hver spesifikk mal. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN i stedet.\r\n\r\nVed å anvende dette rammeverket i et templat kan gjøre det mulig å dokumentere en vidt spekter av spørsmål/svar, som:\r\n\r\n- Har du noen gang fått testet kolesterolnivået ditt? Ja, Nei, Ukjent.\r\n- Har du blitt testet for rubella-antistoffer? Ja, Nei, Ukjent.\r\n- Har du noen gang blitt screenet for sigdcellesykdom? Ja, Nei, Ukjent\r\n- Når var ditt siste røntgenbilde av thorax?\r\n- Hva var svaret på din siste INR-prøve?\r\n- Hva var funnene på EKG-et?\r\n- Var svaret normalt på screeningen i hørselundersøkelsen for nyfødte?\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall. Bruk egne instanser av denne arketypen for å skille mellom spørsmål om diagnostiske undersøkelser som gjelder et hvilket som helst tidspunkt eller for et tidsintervall. For eksempel; \"Har du noen gang tatt en INR-prøve?\" sammenlignet med \"Har du tatt en INR-prøve i løpet av de siste fire ukene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodell.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at det er gjort en undersøkelse som bør lagres i den elektroniske journalen er det tenkt at de spesifikke detaljene om undersøkelsen skal lagres i persistente arketyper laget spesielt for det formålet.",
+          "misuse" : "Skal ikke brukes til å registrere bestilling av diagnostiske tester - bruk INSTRUCTION.service_request for dette formålet.\r\n\r\nSkal ikke brukes til å registrere fremdriften til aktiviteter utført som en del av undersøkelse - bruk ACTION.laboratory_test for dette formålet.\r\n\r\nSkal ikke brukes til å registrere formelle diagnostiske testresultater - bruk OBSERVATION.laboratory_test_result eller OBSERVATION.imaging_examination_result for dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about diagnostic investigations or group of investigations, including but not limited to imaging examinations and laboratory tests.",
+          "keywords" : [ "investigation, screening, questionnaire, prevention, imaging, laboratory, pathology, blood, sample, sputum, EMG, ECG, hearing, test, examination, spinal fluid, biopsy, EEG, MRI, CT, X-ray, PET, ultrasound, spirometry" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about diagnostic investigations or groups of investigations. The scope of diagnostic investigations includes all modalities of imaging examinations and the broadest range of laboratory and anatomical pathology tests. In addition, this archetype can also be used to record when other diagnostic tests have been carried out, such as cardiac stress testing, hearing and vision testing, electrocardiography (ECG) and electroencephalography (EEG).\r\n\r\nCommon use cases include, but are not limited to:\r\n- Patient self-reporting\r\n- Creating a patient profile in a disease registry\r\n- Systematic questioning in any consultation related to patterns of investigation administration\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. Each data element would usually be renamed in a template to represent the specific question asked. Where value sets have been proposed for common use cases, these can be adapted to align with local requirements by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. \r\n\r\nUtilising this framework within a template can enable documentation of a broad range of question/answer pairs such as:\r\n- Have you ever had your cholesterol level tested? Yes, No, Unknown.\r\n- Have you been tested for rubella antibodies? Yes, No, Unknown.\r\n- Have you ever been screened for sickle cell disease? Yes, No, Unknown.\r\n- When was your last Chest X-ray?\r\n- What was the result of your most recent INR test?\r\n- What were the findings of the electrocardiogram?\r\n- Did the infant pass/fail a Neonatal hearing screen?\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about an investigation or test that has been done at any time in the past and information about an investigation or test done within a specified time interval - for example, the difference between \"Have you ever had an INR test?\" compared to \"Have you had an INR test during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies an investigation has been carried out, additional details required for persistence as part of a clinical record can be captured using specific test result archetypes.",
+          "misuse" : "Not to be used for recording an order for an investigation - use INSTRUCTION.service_request for this purpose.\r\n\r\nNot to be used for recording the progress of activities performed as part of an investigation - use appropriate ACTION archetypes for this purpose.\r\n\r\nNot to be used to record formal diagnostic test results - use appropriate OBSERVATIONS for this purpose. For example, the OBSERVATION.laboratory_test_result or OBSERVATION.imaging_examination_result.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca, incloent-hi, entre d'altres, diagnòstic per imatge i proves de laboratori.",
+          "keywords" : [ "investigació, screening, qüestionari, prevenció, imatge, laboratori, patologia, sang, mostra, esput, EMG, ECG, audició, prova, examen, líquid cefaloraquidi, biòpsia, EEG, ressonància magnètica, tomografia computaritzada, raigs X, TEP, ultrasò, espirometria" ],
+          "use" : "Usat per crear una estructura base per registrar respostes a preguntes de screening predefinides sobre investigacions diagnòstiques o grup de recerca. L'abast de les investigacions diagnòstiques inclou totes les modalitats de diagnòstic per imatge i la gamma més àmplia de proves de laboratori i d'anatomia patològica. A més, aquest arquetip també es pot utilitzar per registrar quan s'han realitzat altres proves diagnòstiques, com ara proves d'esforç cardíac, proves d'audició i visió, electrocardiograma (ECG) i electroencefalograma (EEG).\r\n\r\nEls casos d'ús comuns inclouen, entre d'altres:\r\n- Autoinforme del pacient\r\n- Creació dun perfil de pacient en un registre de malalties.\r\n- Qüestionament sistemàtic a qualsevol consulta relacionada amb patrons de gestió d'investigacions.\r\n\r\nLa semàntica d'aquest arquetip és intencionalment vaga i consultar aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En general, es canviaria el nom de cada element de dades a una plantilla per representar la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, es poden adaptar per alinear-se amb els requisits locals utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic.\r\n\r\nLa utilització d'aquesta estructura dins d'una plantilla pot permetre la documentació d'una àmplia gamma de preguntes/respostes, com ara:\r\n- Us han mirat en alguna ocasió el seu nivell de colesterol? Sí, No, Desconegut.\r\n- Li han realitzat la prova d'anticossos contra la rubèola? Sí, No, Desconegut.\r\n- Alguna vegada us han fet proves de detecció d'anèmia falciforme? Sí, No, Desconegut.\r\n- Quan va ser la seva darrera radiografia de tòrax?\r\n- Quin va ser el resultat de la prova d'INR més recent?\r\n- Quines van ser les troballes detectades a l'electrocardiograma?\r\n- El nadó va passar/fallar la prova d'audició neonatal?\r\n\r\nL'estructura EVENT del model de referència es pot fer servir per especificar si les preguntes es relacionen amb un moment determinat o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que enregistra informació sobre una investigació o prova que es va realitzar en qualsevol moment en el passat, i informació sobre una investigació o prova realitzada dins d'un interval de temps específic; per exemple, la diferència entre \"Alguna vegada t'has fet una prova d'INR?\" en comparació amb \"¿S'ha realitzat una prova d'INR en les darreres quatre setmanes?\".\r\n\r\nLa font d'informació d'una resposta del qüestionari pot variar segons el context, però es pot identificar de manera específica utilitzant l'element 'Proveïdor d'informació' al Model de Referència.\r\n\r\nAquest arquetip ha estat dissenyat per fer-se servir com a eina de detecció o per registrar dades en format de qüestionari simple per al seu ús en situacions com un registre de malalties. Si el qüestionari identifica que s'ha dut a terme una investigació, es poden registrar detalls addicionals necessaris per a la seva persistència com a part d'un registre clínic utilitzant arquetips de resultats de proves específics.",
+          "misuse" : "No s'ha d'utilitzar per registrar una ordre per a una investigació; utilitzar INSTRUCTION.service_request per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar el progrés de les activitats realitzades com a part d'una investigació; utilitzar arquetips del tipus ACTION apropiats per a aquest propòsit.\r\n\r\nNo s'ha de fer servir per registrar resultats de proves de diagnòstic formals; utilitzar OBSERVATIONS apropiades per a aquest propòsit. Per exemple, OBSERVATION.laboratory_test_result o OBSERVATION.imaging_examination_result.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones, incluyendo, entre otros, diagnóstico por imagen y pruebas de laboratorio.",
+          "keywords" : [ "investigación, screening, cuestionario, prevención, imagen, laboratorio, patología, sangre, muestra, esputo, EMG, ECG, audición, prueba, examen, líquido cefalorraquídeo, biopsia, EEG, resonancia magnética, tomografía computarizada, rayos X, TEP, ultrasonido, espirometría" ],
+          "use" : "Usado para crear una estructura base para registrar respuestas a preguntas de screening predefinidas sobre investigaciones diagnósticas o grupo de investigaciones. El alcance de las investigaciones diagnósticas incluye todas las modalidades de diagnóstico por imagen y la más amplia gama de pruebas de laboratorio y de anatomía patológica. Además, este arquetipo también se puede utilizar para registrar cuándo se han realizado otras pruebas diagnósticas, como pruebas de esfuerzo cardíaco, pruebas de audición y visión, electrocardiograma (ECG) y electroencefalograma (EEG).\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Autoinforme del paciente\r\n- Creación de un perfil de paciente en un registro de enfermedades.\r\n- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de gestión de investigaciones.\r\n\r\nLa semántica de este arquetipo es intencionalmente vaga y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. Por lo general, se cambiaría el nombre de cada elemento de datos en una plantilla para representar la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para alinearse con los requisitos locales utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico.\r\n\r\nLa utilización de esta estructura dentro de una plantilla puede permitir la documentación de una amplia gama de preguntas/respuestas, como por ejemplo:\r\n- ¿Le han mirado en alguna ocasión su nivel de colesterol? Sí, No, Desconocido.\r\n- ¿Le han realizado la prueba de anticuerpos contra la rubéola? Sí, No, Desconocido.\r\n- ¿Alguna vez le han hecho pruebas de detección de anemia falciforme? Sí, No, Desconocido.\r\n- ¿Cuándo fue su última radiografía de tórax?\r\n- ¿Cuál fue el resultado de su prueba de INR más reciente?\r\n- ¿Cuáles fueron los hallazgos detectados en el electrocardiograma?\r\n- ¿El bebé pasó/falló la prueba de audición neonatal?\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre una investigación o prueba que se realizó en cualquier momento en el pasado, e información sobre una investigación o prueba realizada dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Alguna vez te has hecho una prueba de INR?\" en comparación con \"¿Se ha realizado una prueba de INR en las últimas cuatro semanas?\".\r\n\r\nLa fuente de información de una respuesta del cuestionario puede variar según el contexto, pero puede ifentificarse de forma específica utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.\r\n\r\nEste arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario identifica que se ha llevado a cabo una investigación, se pueden registrar detalles adicionales necesarios para su persistencia como parte de un registro clínico, utilizando arquetipos de resultados de pruebas específicos.",
+          "misuse" : "No debe utilizarse para registrar una orden para una investigación; usar INSTRUCTION.service_request para este propósito.\r\n\r\nNo debe utilizarse para registrar el progreso de las actividades realizadas como parte de una investigación; usar arquetipos del tipo ACTION apropiados para este propósito.\r\n\r\nNo debe utilizarse para registrar resultados de pruebas de diagnóstico formales; usar OBSERVATIONS apropiadas para este propósito. Por ejemplo, OBSERVATION.laboratory_test_result u OBSERVATION.imaging_examination_result.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.investigation_screening-JM.v0",
     "differential" : true,
@@ -1164,6 +1337,14 @@
                       "nodeId" : "at0026.0.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "ARCHETYPE_SLOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0044",
+                      "includes" : [ ],
+                      "excludes" : [ ],
+                      "closed" : false
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1215,6 +1396,39 @@
             "text" : "Standard monitoring – Hourly vital signs, regular registration and calculation of fluid balance.",
             "description" : "Is there a history of any diagnostic tests or investigations related to the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusion",
+            "description" : "Brief description, summary or interpretation of the investigation outcome.",
+            "comment" : "For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings of laboratory tests. In that situation, nest a CLUSTER archetype carrying the structured result within the following 'Additional details' SLOT, for example the CLUSTER.laboratory_test_analyte archetype."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Diagnostic investigation screening questionnaire",
+            "description" : "Series of questions and associated answers used to screen whether diagnostic investigations have been carried out.",
+            "comment" : "The answers may be self-reported."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Type",
+            "description" : "The method, technique, modality or other more specific identification of the diagnostic investigation.",
+            "comment" : "For example: contrast-enhanced mammography, magnification mammography, mammographic digital tomosynthesis,  contrast imaging technique,  fluorescence in situ hybridisation, Immunoassay method."
           }
         },
         "de" : {
@@ -1244,6 +1458,46 @@
             "text" : "Gibt es Untersuchungen? (4)",
             "description" : "Wurden in der Vergangenheit diagnostische Tests oder Untersuchungen im Zusammenhang mit dem Screening durchgeführt?",
             "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Schlussfolgerung",
+            "description" : "Kurze Beschreibung, Zusammenfassung oder Interpretation der Untersuchungsergebnisse.",
+            "comment" : "*For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings of laboratory tests. In that situation, nest a CLUSTER archetype carrying the structured result within the following 'Additional details' SLOT, for example the CLUSTER.laboratory_test_analyte archetype. (en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Durchgeführt?",
+            "description" : "Gibt es eine Vorgeschichte der durchgeführten Untersuchungen?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifische gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem die Datentypauswahl DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Screening-Fragebogen zur diagnostischen Untersuchungen",
+            "description" : "Eine Reihe von Fragen und die dazugehörigen Antworten dienen der Überprüfung, ob diagnostische Untersuchungen durchgeführt wurden.",
+            "comment" : "Die Antworten können selbst berichtet werden."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Unsicher",
+            "description" : ""
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Unsicher",
+            "description" : ""
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Type (en)",
+            "description" : "*The method, technique, modality or other more specific identification of the diagnostic investigation. (en)",
+            "comment" : "*For example: contrast-enhanced mammography, magnification mammography, mammographic digital tomosynthesis,  contrast imaging technique,  fluorescence in situ hybridisation, Immunoassay method. (en)"
           }
         },
         "nb" : {
@@ -1273,6 +1527,451 @@
             "text" : "Noen tidligere undersøkelser? (4)",
             "description" : "Er det gjort noen diagnostiske undersøkelser tidligere som er innenfor kartleggingsformålet?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Konklusjon",
+            "description" : "Kort beskrivelse, oppsummering eller tolkning av funnene på undersøkelsen.",
+            "comment" : "For eksempel \"Alle resultater innenfor normalverdier\", \"Normal\", \"Ytterligere undersøkelser nødvendig\". Dette dataelementet er ikke tenkt å representere det faktiske resultatet eller funnet til et laboratorieresultat. Er det nødvendig kan en passende CLUSTER-arketype benyttes i  SLOT'et \"Ytterligere detaljer\", for eksempel CLUSTER.laboratory_test_analyte arketypen (Analyseresultat)."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Kartleggingsspørsmål om diagnostiske undersøkelser",
+            "description" : "Spørsmål og tilhørende svar som er knyttet til kartlegging om diagnostiske undersøkelser har vært utført eller ikke.",
+            "comment" : "Svarene kan være selvrapporterte."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Usikker",
+            "description" : ""
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Usikker",
+            "description" : ""
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Type",
+            "description" : "Metoden, teknikken, modaliteten eller annen mer spesifikk identifikasjon av den diagnostiske undersøkelsen.",
+            "comment" : "For eksempel: kontrastforsterket mammografi, forstørrelsesmammografi, digital tomosyntese av bryst, kontrastbildeteknikk, fluorescens in situ hybridisering (FISH), immunoassay-metode."
+          }
+        },
+        "es" : {
+          "at0027.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "¿Alguna investigación?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "ac0.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.0.1",
+            "description" : ""
+          },
+          "at0027.0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "¿Alguna investigación?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0027.0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "¿Alguna investigación?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0027.0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "¿Alguna investigación?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusion",
+            "description" : "Breve descripción, resumen o interpretación del resultado de la investigación.",
+            "comment" : "*For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings of laboratory tests. In that situation, nest a CLUSTER archetype carrying the structured result within the following 'Additional details' SLOT, for example the CLUSTER.laboratory_test_analyte archetype. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Cuestionario de detección de investigación diagnóstica",
+            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
+            "comment" : "Las respuestas pueden ser autoinformadas."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Cuestionario de detección de investigación diagnóstica",
+            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
+            "comment" : "Las respuestas pueden ser autoinformadas."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Tiempo",
+            "description" : "Indicación del momento relacionado con la investigación.",
+            "comment" : "El elemento de datos 'Tiempo' se ha modelado deliberadamente de manera flexible para permitir la infinidad de formas en que se puede utilizar en cuestionarios, con el fin de registrar cuándo se llevó a cabo una investigación. La semántica específica y prevista se puede aclarar aún más en una template. Por ejemplo: la fecha y/u hora real; la hora de inicio y finalización de la investigación; el intervalo de tiempo durante el cual se llevó a cabo la investigación; la duración de la investigación; la edad del individuo al momento de la investigación; o el tiempo transcurrido desde que ocurrió. Una fecha parcial es válida, utilizando el tipo de datos DV_DATE_TIME, para registrar solo un año."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Extensión",
+            "description" : "Se requiere información adicional para ampliar el modelo con contenido local o para alinearlo con otros modelos o formalismos de referencia.",
+            "comment" : "Por ejemplo: requisitos de información local; o metadatos adicionales para alinearse con FHIR."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Nombre de la investigación",
+            "description" : "Nombre de la investigación diagnóstica o grupo de investigaciones.",
+            "comment" : "Por ejemplo: 'Gas en sangre', Radiografía de tórax', 'ECG'; o 'Audiometría'.\r\nSiempre que sea posible, se prefiere codificar el 'nombre de la investigación' con una terminología."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Cualquier evento",
+            "description" : "Evento predeterminado, en un intervalo de tiempo o momento no específico, que puede ser definido de forma expresa en una plantilla o en tiempo de ejecución."
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "¿Realizado?",
+            "description" : "¿Existen antecedentes de que se haya llevado a cabo la investigación?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Comentarios",
+            "description" : "Narración adicional sobre la prueba de investigación diagnóstica, no registrada en otros campos."
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigación específica",
+            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
+            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "¿Alguna investigación?",
+            "description" : "¿Existen antecedentes de alguna prueba diagnóstica o investigación relacionada con el propósito del screening?",
+            "comment" : "En un template, el nombre del elemento de datos normalmente se cambiaría según la pregunta específica formulada. El conjunto de valores propuesto se puede adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincida con cada caso de uso específico."
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Sí",
+            "description" : ""
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Desconocido",
+            "description" : ""
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Sí",
+            "description" : ""
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Desconocido",
+            "description" : ""
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Propósito del screening",
+            "description" : "Contexto o motivo del screening.",
+            "comment" : "Este elemento de datos tiene como objetivo proporcionar una recogida de información para los grupos de preguntas/respuestas, cuando se realicen consultas en una fecha posterior. No se espera que este elemento de datos sea expuesto al individuo, sino que solo se almacene en forma de datos. Por ejemplo: screening previo al ingreso, nombre del cuestionario propiamente dicho o screening de investigaciones previas."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Detalles adicionales",
+            "description" : "Detalles estructurados o preguntas sobre la investigación específica o grupo de investigaciones."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Descripción",
+            "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Detalles adicionales",
+            "description" : "Detalles estructurados o preguntas sobre el screening para investigaciones diagnósticas."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Type (en)",
+            "description" : "*The method, technique, modality or other more specific identification of the diagnostic investigation. (en)",
+            "comment" : "*For example: contrast-enhanced mammography, magnification mammography, mammographic digital tomosynthesis,  contrast imaging technique,  fluorescence in situ hybridisation, Immunoassay method. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Cuestionario de detección de investigación diagnóstica",
+            "description" : "Serie de preguntas y respuestas asociadas, utilizadas para evaluar si se han realizado investigaciones diagnósticas.",
+            "comment" : "Las respuestas pueden ser autoinformadas."
+          },
+          "at0026.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigación específica",
+            "description" : "Detalles sobre una investigación o grupo de investigaciones relevantes para el propósito del screening.",
+            "comment" : "Utilice instancias separadas de este CLUSTER para diferenciar entre investigaciones específicas o grupo de investigaciones."
+          },
+          "at0040.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Propósito del screening",
+            "description" : "Contexto o motivo del screening.",
+            "comment" : "Este elemento de datos tiene como objetivo proporcionar una recogida de información para los grupos de preguntas/respuestas, cuando se realicen consultas en una fecha posterior. No se espera que este elemento de datos sea expuesto al individuo, sino que solo se almacene en forma de datos. Por ejemplo: screening previo al ingreso, nombre del cuestionario propiamente dicho o screening de investigaciones previas."
+          },
+          "at0043.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Descripción",
+            "description" : "Descripción narrativa sobre la historia de cualquier investigación relevante para el propósito del screening."
+          }
+        },
+        "ca" : {
+          "at0027.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Alguna investigació?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "ac0.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.0.1",
+            "description" : ""
+          },
+          "at0027.0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Alguna investigació?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "at0027.0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Alguna investigació?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "at0027.0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Alguna investigació?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Conclusió",
+            "description" : "Breu descripció, resum o interpretació del resultat de la investigació.",
+            "comment" : "*For example: 'All results within normal range', 'Normal', 'Further investigations needed'. This data element is not to contain a representation of the actual results or findings of laboratory tests. In that situation, nest a CLUSTER archetype carrying the structured result within the following 'Additional details' SLOT, for example the CLUSTER.laboratory_test_analyte archetype. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Qüestionari de detecció de recerca diagnòstica",
+            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
+            "comment" : "Les respostes poden ser autoinformades."
+          },
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Qüestionari de detecció de recerca diagnòstica",
+            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
+            "comment" : "Les respostes poden ser autoinformades."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Temps",
+            "description" : "Indicació del moment relacionat amb la investigació.",
+            "comment" : "L'element de dades 'Temps' s'ha modelat deliberadament de manera flexible per permetre la infinitat de formes en què es pot utilitzar en qüestionaris, per tal de registrar quan es va dur a terme una investigació. La semàntica específica i prevista es pot aclarir encara més en una template. Per exemple: la data i/o hora real; l'hora d'inici i de finalització de la investigació; l'interval de temps durant el qual es va dur a terme la investigació; la durada de la investigació; l'edat de l'individu al moment de la investigació; o el temps transcorregut des que va passar. Una data parcial és vàlida, utilitzant el tipus de dades DV_DATE_TIME, per registrar només un any."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Extensió",
+            "description" : "Es requereix informació addicional per ampliar el model amb contingut local o per alinear-lo amb altres models o formalismes de referència.",
+            "comment" : "Per exemple: requisits dinformació local; o metadades addicionals per alinear-se amb FHIR."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Nom de la investigació",
+            "description" : "Nom de la investigació diagnòstica o grup de recerca.",
+            "comment" : "Per exemple: 'Gas en sang', Radiografia de tòrax', 'ECG'; o 'Audiometria'.\r\nSempre que sigui possible, es prefereix codificar el 'nom de la investigació' amb una terminologia."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Qualsevol esdeveniment",
+            "description" : "Esdeveniment predeterminat, en un interval de temps o moment no específic, que es pot definir de forma expressa en una plantilla o en temps d'execució."
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Realitzat?",
+            "description" : "Hi ha antecedents que s'hagi dut a terme la investigació?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant lopció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas dús específic."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Comentaris",
+            "description" : "Narració addicional sobre la prova de recerca diagnòstica, no registrada a altres camps."
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigació específica",
+            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
+            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Alguna investigació?",
+            "description" : "Hi ha antecedents d'alguna prova diagnòstica o investigació relacionada amb el propòsit de l'screening?",
+            "comment" : "En un template, el nom de l'element de dades normalment es canviaria segons la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a ús local utilitzant l'opció de tipus de dades DV_TEXT o DV_BOOLEAN perquè coincideixi amb cada cas d'ús específic."
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Sí",
+            "description" : ""
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Desconegut",
+            "description" : ""
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Sí",
+            "description" : ""
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Desconegut",
+            "description" : ""
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Propòsit de l'screening",
+            "description" : "Context o motiu de l'screening.",
+            "comment" : "Aquest element de dades té com a objectiu proporcionar una recollida d'informació per als grups de preguntes/respostes, quan es facin consultes en una data posterior. No s'espera que aquest element de dades sigui exposat a l'individu, sinó que només s'emmagatzemi en forma de dades. Per exemple: screening previ a l'ingrés, nom del qüestionari pròpiament dit o screening d'investigacions prèvies."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Detalls addicionals",
+            "description" : "Detalls estructurats o preguntes sobre la investigació específica o grup de recerca."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Descripció",
+            "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Detalls addicionals",
+            "description" : "Detalls estructurats o preguntes sobre l'screening per a investigacions diagnòstiques."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Unsure",
+            "description" : ""
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Type (en)",
+            "description" : "*The method, technique, modality or other more specific identification of the diagnostic investigation. (en)",
+            "comment" : "*For example: contrast-enhanced mammography, magnification mammography, mammographic digital tomosynthesis,  contrast imaging technique,  fluorescence in situ hybridisation, Immunoassay method. (en)"
+          },
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Qüestionari de detecció de recerca diagnòstica",
+            "description" : "Sèrie de preguntes i respostes associades, utilitzades per avaluar si s'han fet investigacions diagnòstiques.",
+            "comment" : "Les respostes poden ser autoinformades."
+          },
+          "at0026.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Investigació específica",
+            "description" : "Detalls sobre una investigació o grup d'investigacions rellevants per al propòsit de l'screening.",
+            "comment" : "Utilitzeu instàncies separades d'aquest CLUSTER per diferenciar entre investigacions específiques o grup de recerca."
+          },
+          "at0040.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Propòsit de l'screening",
+            "description" : "Context o motiu de l'screening.",
+            "comment" : "Aquest element de dades té com a objectiu proporcionar una recollida d'informació per als grups de preguntes/respostes, quan es facin consultes en una data posterior. No s'espera que aquest element de dades sigui exposat a l'individu, sinó que només s'emmagatzemi en forma de dades. Per exemple: screening previ a l'ingrés, nom del qüestionari pròpiament dit o screening d'investigacions prèvies."
+          },
+          "at0043.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Descripció",
+            "description" : "Descripció narrativa sobre la història de qualsevol investigació rellevant per al propòsit de l'screening."
           }
         }
       },
@@ -1341,6 +2040,34 @@
         "email" : "kanika.kuwelker@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no, varntzen@ous-hf.no"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1355,7 +2082,56 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CAC43F51B959C1BAF588E16126C71E63"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about the presence of implanted medical devices or use of assistive devices. (en)",
+          "keywords" : [ "*device, implant (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about the presence of implanted devices or use of assistive aids.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Screening for implanted devices before an MRI test.\r\n- Checklist questions about whether the individual uses any assistive devices on admission to hospital.\r\n\r\nThe initial question about any medical device use is focused on implanted devices due to the clinical safety implications, especially when undergoing imaging examinations.\r\n\r\nExamples of implanted medical devices include, but are not limited to:\r\n- cochlear implant; \r\n- pacemaker; \r\n- aneurysm clips;\r\n- joint replacement; \r\n- heart valve; \r\n- coronary stent; \r\n- bone fixation device eg screws or plates; \r\n- deep brain stimulator; or\r\n- intraocular lens.\r\n\r\nExamples of assistive aids include, but are not limited to:\r\n- wheelchair; \r\n- walking stick; \r\n- hearing aid; \r\n- reading glasses; \r\n- prosthetic limb; \r\n- braille reader; \r\n- speech generating device; or \r\n- medication organiser or dispenser.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of the EVENT structure to distinguish between a questions related to different timeframes, such as 'ever', 'now' and in a specified interval of time - for example, the difference between \"Have you ever used a hearing aid?\", \"Do you currently use a hearing aid?\" and \"Have you used a hearing aid in the past year?\"\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence or usage of a medical device, it is recommended that the clinical system record and persist the specific details about the device using EVALUATION.device_summary. (en)",
+          "misuse" : "*Not to be used to record answers to pre-defined screening questions about surgical/operative procedures when a medical device was implanted. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record answers to pre-defined screening questions about medications that have been implanted. Use the OBSERVATION.medication_screening for this purpose. (en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Spørsmål og tilhørende svar som brukes til å kartlegge om tilstedeværelse av implantert medisinsk utstyr eller bruk av medisinsk utstyr.",
+          "keywords" : [ "medisinsk utstyr, implantat, hjelpemiddel" ],
+          "use" : "Benyttes for å registrere detaljer om implantater og bruk av medisinsk utstyr.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Screening for implantater forut for MR-undersøkelse.\r\n- Sjekkliste vedrørende pasientens bruk av hjelpemidler forut for innleggelse i sykehus.\r\n\r\nDet innledende spørsmålet om bruk av medisinsk utstyr er fokusert på implanterte enheter på grunn av de kliniske sikkerhetsmessige konsekvensene, særlig ved billeddiagnostiske undersøkelser.\r\n\r\nEksempler på implantert medisinsk utstyr inkluderer, men ikke begrenset til:\r\n- cochleaimplantat\r\n- pacemaker\r\n- aneurismeklips\r\n- leddproteser\r\n- hjerteklaff\r\n- koronarstent\r\n- benfiksasjonsutstyr, f.eks. skruer eller plater\r\n- dyp hjernestimulator\r\n- intraokulær linse\r\n\r\nEksempler på hjelpemidler inkluderer, men er ikke begrenset til:\r\n- rullestol\r\n- stokk\r\n- høreapparat\r\n- lesebriller\r\n- protese (arm eller bein)\r\n- punktskriftleser (Braille-leser)\r\n- talemaskin (talegenererende enhet)\r\n- medisinorganisator eller dosett\r\n\r\nSemantikken til denne arketypen er med vilje løs, og å spørre etter denne arketypen vil normalt bare være nyttig eller trygt innenfor konteksten til hver spesifikk mal. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN i stedet.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall. Bruk egne instanser av denne arketypen for å skille mellom spørsmål om diagnostiske undersøkelser som gjelder et hvilket som helst tidspunkt eller for et tidsintervall. For eksempel; \"Har du noen gang brukt høreapparat?\", \"Bruker du høreapparat på nåværende tidspunkt? og \"Har du brukt høreapparat det siste året?\"\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodell.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i spørreskjemaet identifiseres at det er gjort en undersøkelse som bør lagres i den elektroniske journalen er det tenkt at de spesifikke detaljene om undersøkelsen skal lagres i persistente arketyper laget spesielt for det formålet.",
+          "misuse" : "Skal ikke brukes til å registrere svar på forhåndsdefinerte screeningsspørsmål om kirurgiske/operative inngrep der et medisinsk utstyr ble implantert. Bruk OBSERVATION.procedure_screening til dette formålet.\r\n\r\nSkal ikke brukes til å registrere svar på forhåndsdefinerte screeningsspørsmål om medisiner som er implantert. Bruk OBSERVATION.medication_screening til dette formålet.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about the presence of implanted medical devices or use of assistive devices.",
+          "keywords" : [ "device, implant" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about the presence of implanted devices or use of assistive aids.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Screening for implanted devices before an MRI test.\r\n- Checklist questions about whether the individual uses any assistive devices on admission to hospital.\r\n\r\nThe initial question about any medical device use is focused on implanted devices due to the clinical safety implications, especially when undergoing imaging examinations.\r\n\r\nExamples of implanted medical devices include, but are not limited to:\r\n- cochlear implant; \r\n- pacemaker; \r\n- aneurysm clips;\r\n- joint replacement; \r\n- heart valve; \r\n- coronary stent; \r\n- bone fixation device eg screws or plates; \r\n- deep brain stimulator; or\r\n- intraocular lens.\r\n\r\nExamples of assistive aids include, but are not limited to:\r\n- wheelchair; \r\n- walking stick; \r\n- hearing aid; \r\n- reading glasses; \r\n- prosthetic limb; \r\n- braille reader; \r\n- speech generating device; or \r\n- medication organiser or dispenser.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a point in time or over a period of time. Use a separate instance of the EVENT structure to distinguish between a questions related to different timeframes, such as 'ever', 'now' and in a specified interval of time - for example, the difference between \"Have you ever used a hearing aid?\", \"Do you currently use a hearing aid?\" and \"Have you used a hearing aid in the past year?\"\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence or usage of a medical device, it is recommended that the clinical system record and persist the specific details about the device using EVALUATION.device_summary.",
+          "misuse" : "Not to be used to record answers to pre-defined screening questions about surgical/operative procedures when a medical device was implanted. Use the OBSERVATION.procedure_screening for this purpose.\r\n\r\nNot to be used to record answers to pre-defined screening questions about medications that have been implanted. Use the OBSERVATION.medication_screening for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.device_screening.v0",
     "differential" : true,
@@ -1645,7 +2421,114 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5860FF5470219DF112E9B113832703C7"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über das klinische Management im Zusammenhang mit chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden.",
+          "keywords" : [ "Prozedur, Verfahren, Eingriff, Operation, Beurteilung, Untersuchung, Fragebogen, Screening" ],
+          "use" : "Zur Schaffung von Rahmenbedingungen für die Darstellung von Antworten auf vordefinierte Screening-Fragen über das klinische Management im Zusammenhang mit chirurgischen/operativen Prozeduren, die in der Vergangenheit durchgeführt wurden.\r\n\r\nHäufige Anwendungsfälle umfassen, sind aber nicht beschränkt auf:\r\n- Gezielte Befragung zu bisherigen Eingriffen vor Aufnahme in ein Krankenhaus.\r\n- Systematische Befragung in jedem Beratungsgespräch, zum Beispiel:\r\n--- Hatten Sie jemals eine Appendektomie? Ja, Nein, Unbekannt.\r\n--- Hatten Sie in den letzten zwölf Monaten einen Hüft- oder Kniegelenkersatz? Ja, Nein, Unbekannt.\r\n\r\nDie Semantik dieses Archetyps ist mit Absicht etwas locker definiert und diesen Archetyp zu verwenden ist nur sinnvoll im Kontext eines spezifischen Templates. In einem Template würde jedes Datenelement in eine der spezifischen Fragen umbenannt werden. Wenn für bestimmte Anwendungsfälle Gruppen an Werten vorgesehen sind, können diese für den lokalen Gebrauch auf den jeweiligen Anwendungsfall mit den Datentypen DV_TEXT oder DV_BOOLEAN angepasst werden.\r\n\r\nDie EVENT-Struktur vom Referenzmodell kann verwendet werden, um weiter zu spezifizieren, ob die Fragen sich auf einen bestimmten Zeitpunkt oder eher eine Zeitspanne beziehen. Eine seperate Instanz dieses Archetyps wird verwendet, um zwischen einer Befragung zur Prozedur zu irgendeinem bestimmten Zeitpunkt in der Vergangenheit und Informationen zu Prozeduren, die in einer bestimmten Zeitspanne durchgeführt wurden - zum Beispiel den Unterschied zwischen \"Haben Sie jemals eine Hüft- oder Knieoperation gehabt?\" im Vergleich zu „Haben Sie in den letzten 12 Monaten eine Hüft- oder Knieoperation gehabt?\r\n\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann jedoch mithilfe des Elements „Information provider“ im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde entwickelt, um als Screening-Tool oder zur Darstellung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister verwendet zu werden. Wenn der Screening-Fragebogen die abgeschlossene Prozedur identifiziert, wird empfohlen, dass das klinische System die spezifischen Details über die Prozedur (z. B. die Dauer der Prozedur) unter Verwendung des Archetyps ACTION.procedure aufzeichnet und beibehält.",
+          "misuse" : "Der Archetyp darf nicht verwendet werden, um Details über das Vorhandensein oder Nichtvorhandensein einer Prozedur außerhalb eines Screening-Kontexts darzustellen. Verwenden Sie für diese Zwecke ACTION.procedure oder EVALUATION.exclusion_specific.\r\n\r\nNicht zur Darstellung von nicht-chirurgischem oder nicht-invasivem klinischen Managementaktivitäten verwenden. Verwenden Sie zu diesem Zweck OBSERVATION.management_screening.\r\n\r\nDarf nicht verwendet werden, um Details zu einer einfachen Auswahlliste darzustellen, in der eine Frage entweder als \"vorhanden\" oder \"unbestimmt\" aufgezeichnet werden kann. Verwenden Sie dazu OBSERVATION.selection_list.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere.",
+          "keywords" : [ "prosedyre, operasjon, kirurgi, spørreskjema, kartlegging" ],
+          "use" : "Brukes for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om kirurgiske/operative prosedyrer som er utført tidligere.\r\n\r\nVanlige bruksområder inkluderer, men er ikke begrenset til:\r\n- Spesifikke spørsmål før innleggelse ved sykehuset.\r\n- Systematiske spørsmål ved konsultasjoner, for eksempel:\r\n--- Har du gjennomgått en appendektomi? Ja, Nei, Ukjent.\r\n--- Har du fått gjennomført en hofte eller kneoperasjon de siste tolv månedene? Ja, Nei, Ukjent.\r\n\r\nSemantikken til denne arketypen er med vilje løst definert, og spørringer etter data i denne arketypen vil normalt bare være hensiktsmessig eller sikkert i konteksten av det spesifikke templatet. I et templat vil hvert dataelement vanligvis døpes om til det (spesifikke) spørsmålet man ønsker svar på. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN for å harmonere verdisettet til hvert enkelt brukstilfelle.\r\n\r\nEVENT-strukturen fra arketypens referansemodell kan brukes for å spesifisere om spørsmålene relateres til et tidspunkt eller til et tidsintervall.\r\nBruk egne instanser av denne arketypen for å skille mellom spørsmål om prosedyrer som er gjennomførte på et hvilket som helst tidspunkt og spørsmål om prosedyrer som er gjennomført i et tidsintervall. For eksempel; \"Har du noen sinne fått utført en hofte eller kneoperasjon?\" sammenlignet med \"Har du fått gjennomført en hofte- eller kneoperasjon i løpet av de siste 12 månedene?\".\r\n\r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan identifiseres spesifikt ved å benytte \"Information provider\" elementet i openEHR referansemodellen.\r\n\r\nDenne arketypen er laget for å bli brukt i et spørreskjema eller for å registrere enkle strukturerte data til for eksempel et sykdomsregister. Dersom det i kartleggingen identifiseres at en prosedyre er gjennomført, anbefales det at spesifikke detaljer om prosedyren (som for eksempel når og/eller hvor prosedyren ble gjort) registreres og lagres i pasientjournalen i arketypen Prosedyre (ACTION.procedure).",
+          "misuse" : "Brukes ikke for å registrere detaljer om tilstedeværelse eller fravær av en prosedyre utenfor konteksten av kartleggingen. Bruk arketypen ACTION.procedure (Prosedyre) eller EVALUATION.exclusion_specific (Eksklusjonsutsagn - spesifikt) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om ikke kirugisk eller noninvasiv sykdomshåndtering. Bruk arketypen OBSERVATION.management_screening (Kartleggingsspørsmål om sykdomshåndtering) for dette formålet.\r\n\r\nBrukes ikke for å registrere detaljer om en enkel utvalgsliste der et spørsmål kan registreres som enten \"Tilstede\" eller \"Ubestemt\". Bruk arketypen OBSERVATION.selection_list for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about clinical management related to surgical/operative procedures that have been carried out in the past.",
+          "keywords" : [ "Procedure, surgery, operation, assessment, investigation, questionnaire, screening" ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about clinical management related to surgical/operative procedures that have been carried out in the past.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Specific questioning about previous procedures before admission to a hospital.\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever had an appendectomy? Yes, No, Unknown.\r\n--- Have you had a hip or knee replacement in the past twelve months? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Have you ever had any hip or knee surgery?\" compared to \"Have you had any hip or knee surgery in the last 12 months?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies a completed procedure, it is recommended that clinical system record and persist the specific details about the procedure (such as the duration of the procedure) using the ACTION.procedure archetype.",
+          "misuse" : "Not to be used to record details about the presence or absence of a procedure, outside of a screening context. Use ACTION.procedure or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to record non-surgical or non-invasive clinical management. Use OBSERVATION.management_screening for this purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "*To create a framework for recording answers to pre-defined screening questions about clinical management related to specific invasive interventions or surgical/operative procedures that have been carried out in the past. (en)",
+          "keywords" : [ "*Procedure, surgery, operation, assessment, investigation, questionnaire, screening (en)" ],
+          "use" : "*Use to create a framework for recording answers to pre-defined screening questions about clinical management related to specific invasive interventions or surgical/operative procedures that have been carried out in the past.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Specific questioning about previous procedures before admission to a hospital.\r\n- Systematic questioning in any consultation, for example:\r\n--- Have you ever had an appendectomy? Yes, No, Unknown.\r\n--- Have you had a hip or knee replacement in the past twelve months? Yes, No, Unknown.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Have you ever had any hip or knee surgery?\" compared to \"Have you had any hip or knee surgery in the last 12 months?\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening process identifies a completed procedure, it is recommended that clinical system record and persist the specific details about the procedure (such as the duration of the procedure) using the ACTION.procedure archetype. (en)",
+          "misuse" : "*Not to be used to record details about the presence or absence of a procedure, outside of a screening context. Use ACTION.procedure or EVALUATION.exclusion_specific for these purposes.\r\n\r\nNot to be used to record non-surgical or non-invasive clinical management. Use OBSERVATION.management_screening for this purposes.\r\n\r\nNot to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Créer un cadre pour l'enregistrement des réponses à des questions de sélection prédéfinies sur la gestion clinique liée aux procédures chirurgicales/opératoires qui ont été effectuées dans le passé.",
+          "keywords" : [ "Procédure, chirurgie, opération, évaluation, enquête, questionnaire, dépistage" ],
+          "use" : "A utiliser pour créer un cadre permettant d'enregistrer les réponses à des questions prédéfinies sur la gestion clinique liée à des procédures chirurgicales/opératoires qui ont été effectuées dans le passé.\r\n\r\nLes cas d'utilisation les plus courants sont, entre autres, les suivants\r\n- des questions spécifiques sur les interventions antérieures avant l'admission à l'hôpital\r\n- Interrogation systématique lors d'une consultation, par exemple : --- Avez-vous déjà eu une appendicite ?\r\n--- Avez-vous déjà subi une appendicectomie ? Oui, Non, Inconnu.\r\n--- Avez-vous subi une arthroplastie de la hanche ou du genou au cours des douze derniers mois ? Oui, Non, Inconnu.\r\n\r\nLa sémantique de cet archétype est intentionnellement floue, et l'interrogation de cet archétype ne serait normalement utile ou sûre que dans le contexte de chaque modèle spécifique. Dans un modèle, chaque élément de données est généralement renommé en fonction de la question spécifique posée. Lorsque des ensembles de valeurs ont été proposés pour des cas d'utilisation courants, ils peuvent être adaptés à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour correspondre à chaque cas d'utilisation spécifique.\r\n\r\nLa structure EVENT du modèle de référence peut être utilisée pour spécifier si les questions se rapportent à un moment donné ou à une période de temps. Utilisez une instance distincte de cet archétype pour faire la distinction entre un questionnaire enregistrant des informations sur une procédure effectuée à tout moment dans le passé et des informations sur une procédure effectuée dans un intervalle de temps donné - par exemple la différence entre \"Avez-vous déjà subi une opération de la hanche ou du genou ?\" et \"Avez-vous subi une opération de la hanche ou du genou au cours des 12 derniers mois ?\r\n\r\nLa source des informations contenues dans une réponse à un questionnaire peut varier selon le contexte, mais elle peut être spécifiquement identifiée à l'aide de l'élément \"Fournisseur d'informations\" du modèle de référence.\r\n\r\nCet archétype a été conçu pour être utilisé comme outil de dépistage ou pour enregistrer des données simples sous forme de questionnaire en vue d'une utilisation dans des situations telles qu'un registre des maladies. Si le processus de dépistage identifie une procédure terminée, il est recommandé que le système clinique enregistre et conserve les détails spécifiques de la procédure (tels que la durée de la procédure) à l'aide de l'archétype ACTION.procedure.",
+          "misuse" : "Ne pas utiliser pour enregistrer des détails sur la présence ou l'absence d'une procédure, en dehors d'un contexte de dépistage. Utiliser ACTION.procedure ou EVALUATION.exclusion_specific à cette fin.\r\n\r\nNe doit pas être utilisé pour enregistrer une prise en charge clinique non chirurgicale ou non invasive. Utilisez OBSERVATION.management_screening à cette fin.\r\n\r\nNe pas utiliser pour enregistrer les détails d'une simple liste de sélection où une question peut être enregistrée comme \"présente\" ou \"indéterminée\". Utiliser OBSERVATION.selection_list à cette fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el manejo clínico relacionado con procedimientos quirúrgicos/operatorios que se han llevado a cabo en el pasado.",
+          "keywords" : [ "Procedimiento", "cirugía", "operación", "evaluación", "investigación", "cuestionario", "cribado" ],
+          "use" : "Se utiliza para crear un marco para registrar las respuestas a preguntas de cribado predefinidas sobre la gestión clínica relacionada con procedimientos quirúrgicos/operatorios realizados en el pasado.\r\n\r\nLos casos de uso comunes incluyen, entre otros:\r\n- Preguntas específicas sobre procedimientos previos al ingreso hospitalario.\r\n- Preguntas sistemáticas en cualquier consulta, por ejemplo:\r\n--- ¿Se ha sometido alguna vez a una apendicectomía? Sí, No, Desconocido.\r\n--- ¿Se ha sometido a un reemplazo de cadera o rodilla en los últimos doce meses? Sí, No, Desconocido.\r\n\r\nLa semántica de este arquetipo es intencionadamente imprecisa, y consultarlo normalmente solo sería útil o seguro en el contexto de cada plantilla específica. En una plantilla, cada elemento de datos se renombraría generalmente según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando los tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.\r\n\r\nLa estructura EVENT del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un punto en Tiempo o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un procedimiento realizado en cualquier momento del pasado y la información sobre un procedimiento realizado dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Se ha sometido alguna vez a una cirugía de cadera o rodilla?\" y \"¿Se ha sometido a alguna cirugía de cadera o rodilla en los últimos 12 meses?\".\r\n\r\nLa fuente de información en una respuesta al cuestionario puede variar según el contexto, pero se puede identificar específicamente mediante el elemento \"Proveedor de información\" del Modelo de Referencia.\r\n\r\nEste arquetipo se ha diseñado para utilizarse como herramienta de cribado o para registrar datos sencillos en formato de cuestionario para su uso en situaciones como un registro de enfermedades. Si el proceso de cribado identifica un procedimiento completado, se recomienda que el sistema clínico registre y conserve los detalles específicos del procedimiento (como su duración) utilizando el arquetipo ACTION.procedure.",
+          "misuse" : "No debe utilizarse para registrar detalles sobre la presencia o ausencia de un procedimiento fuera del contexto de un cribado. Utilice ACTION.procedure o EVALUATION.exclusion_specific para estos fines.\r\n\r\nNo debe utilizarse para registrar el manejo clínico no quirúrgico o no invasivo. Utilice OBSERVATION.management_screening para estos fines.\r\n\r\nNo debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta pueda registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este fin.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Crear un marc per a l'enregistrament de respostes a preguntes predefinides de cribratge sobre la gestió clínica relacionada amb els procediments quirúrgics/operatius que s'han dut a terme en el passat.",
+          "keywords" : [ "Procediment", "cirurgia", "operació", "avaluació", "investigació", "qüestionari", "cribratge" ],
+          "use" : "Creació d'un marc per a l'enregistrament de respostes a preguntes predefinides de cribratge sobre la gestió clínica relacionada amb els procediments quirúrgics/operatius que s'han dut a terme en el passat.\r\n\r\nEls casos d'ús comuns inclouen, però no es limiten a:\r\n- Qüestionari específic sobre els procediments previs abans de l'ingrés a un hospital.\r\n- Qüestionari sistemàtic en qualsevol consulta, per exemple:\r\n--- Alguna vegada has tingut una apendectomia? Sí, no, desconegut.\r\n--- Has tingut un reemplaçament de maluc o genoll en els últims dotze mesos? Sí, no, desconegut.\r\n\r\nLa semàntica d'aquest arquetip és intencionadament laxa, i la consulta d'aquest arquetip normalment només seria útil o segur dins del context de cada plantilla específica. En una plantilla, cada element de dades normalment es reanomena segons la pregunta específica formulada. Quan s'han proposat conjunts de valors per a casos d'ús comuns, aquests es poden adaptar per a ús local utilitzant el DV_TEXT o els tipus de dades DV_BOOLEAN per a coincidir amb cada cas d'ús específic.\r\n\r\nL'estructura de l'EVENT a partir del model de referència es pot utilitzar per especificar si les preguntes es relacionen amb un punt en el temps o durant un període de temps. Utilitzeu una instància separada d'aquest arquetip per distingir entre un qüestionari que registra informació sobre un procediment que s'ha realitzat en qualsevol moment del passat i informació sobre un procediment realitzat en un interval de temps especificat - per exemple la diferència entre \"Has tingut alguna cirurgia de maluc o genoll?\" en comparació amb \"Has tingut alguna cirurgia de maluc o genoll en els últims 12 mesos?\".\r\n\r\nLa font de la informació en una resposta de qüestionari pot variar en diferents contextos, però es pot identificar específicament utilitzant l'element 'Proveïdor d'informació' del Model de Referència.\r\n\r\nAquest arquetip ha estat dissenyat per ser utilitzat com a eina de cribratge o per registrar dades simples en format qüestionari per al seu ús en situacions com un registre de malalties. Si el procés de cribratge identifica un procediment completat, es recomana que el sistema clínic registri i persisteixi els detalls específics sobre el procediment (com la durada del procediment) utilitzant l'arquetip ACTION.procedure.",
+          "misuse" : "No s'ha d'utilitzar per registrar detalls sobre la presència o absència d'un procediment, fora d'un context de cribratge. Utilitzar ACTION.procedure o EVALUATION.exclusion_specific per a aquestes finalitats.\r\n\r\nNo s'ha d'utilitzar per registrar una gestió clínica no quirúrgica o no invasiva. Utilitzar OBSERVATION.management_screening per a aquestes finalitats.\r\n\r\nNo s'ha d'utilitzar per a enregistrar detalls sobre una llista de selecció senzilla on una pregunta es pot enregistrar com a «present» o «indeterminada». Utilitzeu OBSERVATION.selection_list per a aquesta finalitat",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.procedure_screening.v1",
     "differential" : true,
@@ -1785,6 +2668,82 @@
                                 "value" : "local"
                               },
                               "constraint" : [ "ac0.8" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_BOOLEAN",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0028.6",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.11" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_BOOLEAN",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0028.7",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.12" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -2047,6 +3006,20 @@
             "text" : "Cardiopulmonary resuscitation after arrest in the past 24 hours (single precordial percussion not included).",
             "description" : "Is there a history of any past procedures relevant for the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.6",
+            "text" : "Routine dressing changes – Care and prevention of decubitus and daily dressing change.",
+            "description" : "Is there a history of any past procedures relevant for the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.7",
+            "text" : "Frequent dressing changes (at least one time per each nursing shift) and/or extensive wound care.",
+            "description" : "Is there a history of any past procedures relevant for the screening purpose?",
+            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           }
         },
         "nb" : {
@@ -2093,6 +3066,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "Noen tidligere prosedyrer? (5)",
+            "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Noen tidligere prosedyrer? (6)",
+            "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+            "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Noen tidligere prosedyrer? (7)",
             "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
             "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
           }
@@ -2143,6 +3130,20 @@
             "text" : "Irgendwelche frühere Prozeduren? (5)",
             "description" : "Gibt es eine Vorgeschichte von früheren Prozeduren, die für den Screening-Zweck relevant sind?",
             "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Irgendwelche frühere Prozeduren? (6)",
+            "description" : "Gibt es eine Vorgeschichte von früheren Prozeduren, die für den Screening-Zweck relevant sind?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Irgendwelche frühere Prozeduren? (7)",
+            "description" : "Gibt es eine Vorgeschichte von früheren Prozeduren, die für den Screening-Zweck relevant sind?",
+            "comment" : "In einem Template würde das Datenelement normalerweise in die spezifisch gestellte Frage umbenannt. Der vorgeschlagene Wertesatz kann für die lokale Verwendung angepasst werden, indem der Choice-Datentyp DV_TEXT oder DV_BOOLEAN verwendet wird, um jedem spezifischen Anwendungsfall zu entsprechen."
           }
         },
         "it" : {
@@ -2189,6 +3190,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "*Any previous procedures? (en) (5)",
+            "description" : "*Is there a history of any past procedures relevant for the screening purpose? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "*Any previous procedures? (en) (6)",
+            "description" : "*Is there a history of any past procedures relevant for the screening purpose? (en)",
+            "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "*Any previous procedures? (en) (7)",
             "description" : "*Is there a history of any past procedures relevant for the screening purpose? (en)",
             "comment" : "*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)"
           }
@@ -2239,6 +3254,20 @@
             "text" : "Y a-t-il eu des procédures antérieures ? (5)",
             "description" : "Existe-t-il des antécédents de procédures antérieures en rapport avec l'objectif du dépistage ?",
             "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Y a-t-il eu des procédures antérieures ? (6)",
+            "description" : "Existe-t-il des antécédents de procédures antérieures en rapport avec l'objectif du dépistage ?",
+            "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Y a-t-il eu des procédures antérieures ? (7)",
+            "description" : "Existe-t-il des antécédents de procédures antérieures en rapport avec l'objectif du dépistage ?",
+            "comment" : "Dans un modèle, l'élément de données est généralement renommé en fonction de la question spécifique posée. L'ensemble de valeurs proposé peut être adapté à un usage local en utilisant les types de données DV_TEXT ou DV_BOOLEAN pour répondre à chaque cas d'utilisation spécifique."
           }
         },
         "ca" : {
@@ -2287,6 +3316,20 @@
             "text" : "Hi ha algun procediment previ? (5)",
             "description" : "Hi ha algun historial de procediments anteriors rellevants per a l'objectiu de la detecció?",
             "comment" : "En una plantilla, l'element de dades normalment es canviaria el nom a la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a l'ús local utilitzant el DV_TEXT o l'elecció dels tipus de dades DV_BOOLEAN per a cada cas d'ús específic."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Hi ha algun procediment previ? (6)",
+            "description" : "Hi ha algun historial de procediments anteriors rellevants per a l'objectiu de la detecció?",
+            "comment" : "En una plantilla, l'element de dades normalment es canviaria el nom a la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a l'ús local utilitzant el DV_TEXT o l'elecció dels tipus de dades DV_BOOLEAN per a cada cas d'ús específic."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "Hi ha algun procediment previ? (7)",
+            "description" : "Hi ha algun historial de procediments anteriors rellevants per a l'objectiu de la detecció?",
+            "comment" : "En una plantilla, l'element de dades normalment es canviaria el nom a la pregunta específica formulada. El conjunt de valors proposat es pot adaptar per a l'ús local utilitzant el DV_TEXT o l'elecció dels tipus de dades DV_BOOLEAN per a cada cas d'ús específic."
           }
         },
         "es" : {
@@ -2333,6 +3376,20 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0028.1",
             "text" : "¿Algún procedimiento previo? (5)",
+            "description" : "¿Existen antecedentes de algún procedimiento previo que sea relevante para el propósito de la evaluación?",
+            "comment" : "En una plantilla, el elemento de datos normalmente se renombraría según la pregunta específica formulada. El conjunto de valores propuesto puede adaptarse para uso local mediante los tipos de datos DV_TEXT o DV_BOOLEAN para cada caso de uso específico."
+          },
+          "at0028.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "¿Algún procedimiento previo? (6)",
+            "description" : "¿Existen antecedentes de algún procedimiento previo que sea relevante para el propósito de la evaluación?",
+            "comment" : "En una plantilla, el elemento de datos normalmente se renombraría según la pregunta específica formulada. El conjunto de valores propuesto puede adaptarse para uso local mediante los tipos de datos DV_TEXT o DV_BOOLEAN para cada caso de uso específico."
+          },
+          "at0028.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028.1",
+            "text" : "¿Algún procedimiento previo? (7)",
             "description" : "¿Existen antecedentes de algún procedimiento previo que sea relevante para el propósito de la evaluación?",
             "comment" : "En una plantilla, el elemento de datos normalmente se renombraría según la pregunta específica formulada. El conjunto de valores propuesto puede adaptarse para uso local mediante los tipos de datos DV_TEXT o DV_BOOLEAN para cada caso de uso específico."
           }
@@ -2389,6 +3446,16 @@
         "ac0.10" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.10",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0031", "at0032" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
           "members" : [ "at0031", "at0032" ]
         }
       }
