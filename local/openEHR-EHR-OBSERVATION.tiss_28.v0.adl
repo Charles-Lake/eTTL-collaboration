@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95ee2304f305dbd37133f8a481d9dc83">
+		["MD5-CAM-1.0.1"] = <"748dc0fa430b8eb3884c9fbfada76e08">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -208,7 +208,12 @@ definition
 											0|[local::at0091]
 										}
 									}
-									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tiss-28
+									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tiss-28 score
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Tiss-76 score
 										value matches {
 											DV_COUNT matches {*}
 										}
@@ -586,7 +591,11 @@ ontology
 					description = <"">
 				>
 				["at0092"] = <
-					text = <"Tiss-28">
+					text = <"Tiss-28 score">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Tiss-76 score">
 					description = <"">
 				>
 			>
