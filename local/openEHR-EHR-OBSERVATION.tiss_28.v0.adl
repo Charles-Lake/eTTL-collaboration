@@ -10,8 +10,11 @@ language
 description
 	original_author = <
 		["date"] = <"2025-11-21">
+		["name"] = <"Charles Lake">
+		["organisation"] = <"Better">
+		["email"] = <"charles.lake@better.care">
 	>
-	lifecycle_state = <"unmanaged">
+	lifecycle_state = <"in_development">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -23,8 +26,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"138ce434e608465d50b199d516885892">
-		["build_uid"] = <"a096ae0f-5755-3968-b212-dc45ea6a99c8">
+		["revision"] = <"1.0.0-alpha.1">
+		["MD5-CAM-1.0.1"] = <"0a9bb801029abf0a6bea95e5d93e357b">
+		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 	>
 
 definition
@@ -152,50 +156,50 @@ definition
 									}
 									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement.
 										value matches {
-											1|[local::at0060],
-											2|[local::at0061]
+											2|[local::at0060],
+											0|[local::at0061]
 										}
 									}
 									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Active diuresis (e.g. furosemide > 0.5 mg/kg/day for overload).
 										value matches {
-											1|[local::at0062],
-											2|[local::at0063]
+											3|[local::at0062],
+											0|[local::at0063]
 										}
 									}
 									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Measurement of intracranial pressure.
 										value matches {
-											1|[local::at0078],
-											2|[local::at0079]
+											4|[local::at0078],
+											0|[local::at0079]
 										}
 									}
 									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Treatment of complicated metabolic acidosis/alkalosis.
 										value matches {
-											1|[local::at0080],
-											2|[local::at0081]
+											4|[local::at0080],
+											0|[local::at0081]
 										}
 									}
 									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Intravenous hyperalimentation.
 										value matches {
-											1|[local::at0082],
-											2|[local::at0083]
+											3|[local::at0082],
+											0|[local::at0083]
 										}
 									}
 									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Enteral feeding – through gastric tube or other GI route (e.g. jejunostomy).
 										value matches {
-											1|[local::at0084],
-											2|[local::at0085]
+											2|[local::at0084],
+											0|[local::at0085]
 										}
 									}
 									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Single specific interventions in the ICU – naso or orotracheal intubation, introduction of a pacemaker, cardioversion, endoscopies, emergency surgery in the past 24 hours, gastric lavage.
 										value matches {
-											1|[local::at0086],
-											2|[local::at0087]
+											3|[local::at0086],
+											0|[local::at0087]
 										}
 									}
 									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Specific interventions outside of ICU – surgery or diagnostic procedures.
 										value matches {
-											1|[local::at0090],
-											2|[local::at0091]
+											5|[local::at0090],
+											0|[local::at0091]
 										}
 									}
 									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tiss-28
@@ -205,8 +209,8 @@ definition
 									}
 									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
 										value matches {
-											1|[local::at0088],
-											2|[local::at0089]
+											5|[local::at0088],
+											0|[local::at0089]
 										}
 									}
 								}
