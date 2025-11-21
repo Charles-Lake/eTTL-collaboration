@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1f8adc1fb9f05b816ffb7fec25091691">
+		["MD5-CAM-1.0.1"] = <"138ce434e608465d50b199d516885892">
 		["build_uid"] = <"a096ae0f-5755-3968-b212-dc45ea6a99c8">
 	>
 
@@ -38,142 +38,175 @@ definition
 								items cardinality matches {0..*; unordered} matches {
 									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Standard monitoring – Hourly vital signs, regular registration and calculation of fluid balance.
 										value matches {
-											DV_ORDINAL matches {*}
+											5|[local::at0036],
+											0|[local::at0037]
 										}
 									}
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Laboratory – Biochemical and microbiological investigations.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0038],
+											0|[local::at0039]
 										}
 									}
 									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Single medication, any route (IV, PO, IM, etc.).
 										value matches {
-											DV_ORDINAL matches {*}
+											2|[local::at0040],
+											0|[local::at0041]
 										}
 									}
 									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Multiple intravenous medications (more than 1 drug, single shots, or continuously).
 										value matches {
-											DV_ORDINAL matches {*}
+											3|[local::at0042],
+											0|[local::at0043]
 										}
 									}
 									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Routine dressing changes – Care and prevention of decubitus and daily dressing change.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0044],
+											0|[local::at0045]
 										}
 									}
 									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Frequent dressing changes (at least one time per each nursing shift) and/or extensive wound care.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0046],
+											0|[local::at0047]
 										}
 									}
 									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Care of drains (all except gastric tube).
 										value matches {
-											DV_ORDINAL matches {*}
+											3|[local::at0048],
+											0|[local::at0049]
 										}
 									}
 									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Mechanical ventilation – any form of mechanical or assisted ventilation with or without PEEP; with or without muscle relaxants; spontaneous breathing with PEEP.
 										value matches {
-											DV_ORDINAL matches {*}
+											5|[local::at0050],
+											0|[local::at0051]
 										}
 									}
 									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Supplementary ventilatory support – breathing spontaneously through endotracheal tube without PEEP; supplementary oxygen by any method except if mechanical ventilation parameters apply.
 										value matches {
-											DV_ORDINAL matches {*}
+											2|[local::at0052],
+											0|[local::at0053]
 										}
 									}
 									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Care of artificial airways – endotracheal tube or tracheostoma.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0054],
+											0|[local::at0055]
 										}
 									}
 									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Treatment for improving lung function – thorax physiotherapy, incentive spirometry, inhalation therapy, intratracheal suctioning.
 										value matches {
-											DV_ORDINAL matches {*}
-										}
-									}
-									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Hemofiltration techniques – dialytic techniques.
-										value matches {
-											DV_ORDINAL matches {*}
-										}
-									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement.
-										value matches {
-											DV_ORDINAL matches {*}
-										}
-									}
-									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Active diuresis (e.g. furosemide > 0.5 mg/kg/day for overload).
-										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0056],
+											0|[local::at0057]
 										}
 									}
 									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Single vasoactive medication – any vasoactive drug.
 										value matches {
-											DV_ORDINAL matches {*}
+											3|[local::at0064],
+											0|[local::at0065]
 										}
 									}
 									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Multiple vasoactive medications – more than 1 vasoactive drug, disregard type and dose.
 										value matches {
-											DV_ORDINAL matches {*}
+											4|[local::at0066],
+											0|[local::at0067]
 										}
 									}
 									ELEMENT[at0021] occurrences matches {0..1} matches {    -- Intravenous replacement of large fluid losses – fluid replacement > 3 litres per square metre per day, disregard type of fluid administered.
 										value matches {
-											DV_ORDINAL matches {*}
+											4|[local::at0068],
+											0|[local::at0069]
 										}
 									}
 									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Peripheral arterial catheter.
 										value matches {
-											DV_ORDINAL matches {*}
+											5|[local::at0070],
+											0|[local::at0071]
 										}
 									}
 									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Left atrium monitoring – pulmonary artery flotation catheter with or without cardiac output measurement.
 										value matches {
-											DV_ORDINAL matches {*}
+											8|[local::at0072],
+											0|[local::at0073]
 										}
 									}
 									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Central venous line.
 										value matches {
-											DV_ORDINAL matches {*}
+											2|[local::at0074],
+											0|[local::at0075]
 										}
 									}
 									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Cardiopulmonary resuscitation after arrest in the past 24 hours (single precordial percussion not included).
 										value matches {
-											DV_ORDINAL matches {*}
+											3|[local::at0076],
+											0|[local::at0077]
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Hemofiltration techniques – dialytic techniques.
+										value matches {
+											3|[local::at0058],
+											0|[local::at0059]
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement.
+										value matches {
+											1|[local::at0060],
+											2|[local::at0061]
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Active diuresis (e.g. furosemide > 0.5 mg/kg/day for overload).
+										value matches {
+											1|[local::at0062],
+											2|[local::at0063]
 										}
 									}
 									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Measurement of intracranial pressure.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0078],
+											2|[local::at0079]
 										}
 									}
 									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Treatment of complicated metabolic acidosis/alkalosis.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0080],
+											2|[local::at0081]
 										}
 									}
 									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Intravenous hyperalimentation.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0082],
+											2|[local::at0083]
 										}
 									}
 									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Enteral feeding – through gastric tube or other GI route (e.g. jejunostomy).
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0084],
+											2|[local::at0085]
 										}
 									}
 									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Single specific interventions in the ICU – naso or orotracheal intubation, introduction of a pacemaker, cardioversion, endoscopies, emergency surgery in the past 24 hours, gastric lavage.
 										value matches {
-											DV_ORDINAL matches {*}
-										}
-									}
-									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
-										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0086],
+											2|[local::at0087]
 										}
 									}
 									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Specific interventions outside of ICU – surgery or diagnostic procedures.
 										value matches {
-											DV_ORDINAL matches {*}
+											1|[local::at0090],
+											2|[local::at0091]
+										}
+									}
+									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tiss-28
+										value matches {
+											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
+										value matches {
+											1|[local::at0088],
+											2|[local::at0089]
 										}
 									}
 								}
@@ -343,6 +376,234 @@ ontology
 				>
 				["at0035"] = <
 					text = <"Specific interventions outside of ICU – surgery or diagnostic procedures.">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Tiss-28">
 					description = <"">
 				>
 			>
