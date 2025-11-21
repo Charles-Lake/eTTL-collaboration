@@ -26,9 +26,9 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["revision"] = <"1.0.0-alpha.1">
-		["MD5-CAM-1.0.1"] = <"0a9bb801029abf0a6bea95e5d93e357b">
+		["MD5-CAM-1.0.1"] = <"9021be7c20b2132880098b92aba7cb67">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
+		["revision"] = <"1.0.0-alpha.1">
 	>
 
 definition
@@ -196,6 +196,12 @@ definition
 											0|[local::at0087]
 										}
 									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
+										value matches {
+											5|[local::at0088],
+											0|[local::at0089]
+										}
+									}
 									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Specific interventions outside of ICU – surgery or diagnostic procedures.
 										value matches {
 											5|[local::at0090],
@@ -207,12 +213,6 @@ definition
 											DV_COUNT matches {*}
 										}
 									}
-									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
-										value matches {
-											5|[local::at0088],
-											0|[local::at0089]
-										}
-									}
 								}
 							}
 						}
@@ -221,20 +221,7 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0025] matches {    -- Item tree
-				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- DV_ORDINAL
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- DV_ORDINAL
-						value matches {
-							DV_ORDINAL matches {*}
-						}
-					}
-				}
-			}
+			ITEM_TREE[at0025] matches {*}    -- Item tree
 		}
 	}
 
@@ -257,10 +244,6 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
-				>
-				["at0004"] = <
-					text = <"DV_ORDINAL">
-					description = <"">
 				>
 				["at0005"] = <
 					text = <"Standard monitoring – Hourly vital signs, regular registration and calculation of fluid balance.">
@@ -332,10 +315,6 @@ ontology
 				>
 				["at0022"] = <
 					text = <"Peripheral arterial catheter.">
-					description = <"">
-				>
-				["at0023"] = <
-					text = <"DV_ORDINAL">
 					description = <"">
 				>
 				["at0025"] = <
