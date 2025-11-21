@@ -1,0 +1,350 @@
+archetype (adl_version=1.4; uid=934692d9-e40b-4d0a-a84e-ce557bfd6c47)
+	openEHR-EHR-OBSERVATION.tiss_28.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-11-21">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"1f8adc1fb9f05b816ffb7fec25091691">
+		["build_uid"] = <"a096ae0f-5755-3968-b212-dc45ea6a99c8">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- TISS_28
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Standard monitoring – Hourly vital signs, regular registration and calculation of fluid balance.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Laboratory – Biochemical and microbiological investigations.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Single medication, any route (IV, PO, IM, etc.).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Multiple intravenous medications (more than 1 drug, single shots, or continuously).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Routine dressing changes – Care and prevention of decubitus and daily dressing change.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Frequent dressing changes (at least one time per each nursing shift) and/or extensive wound care.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Care of drains (all except gastric tube).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Mechanical ventilation – any form of mechanical or assisted ventilation with or without PEEP; with or without muscle relaxants; spontaneous breathing with PEEP.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {    -- Supplementary ventilatory support – breathing spontaneously through endotracheal tube without PEEP; supplementary oxygen by any method except if mechanical ventilation parameters apply.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Care of artificial airways – endotracheal tube or tracheostoma.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0015] occurrences matches {0..1} matches {    -- Treatment for improving lung function – thorax physiotherapy, incentive spirometry, inhalation therapy, intratracheal suctioning.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Hemofiltration techniques – dialytic techniques.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0018] occurrences matches {0..1} matches {    -- Active diuresis (e.g. furosemide > 0.5 mg/kg/day for overload).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0019] occurrences matches {0..1} matches {    -- Single vasoactive medication – any vasoactive drug.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0020] occurrences matches {0..1} matches {    -- Multiple vasoactive medications – more than 1 vasoactive drug, disregard type and dose.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0021] occurrences matches {0..1} matches {    -- Intravenous replacement of large fluid losses – fluid replacement > 3 litres per square metre per day, disregard type of fluid administered.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Peripheral arterial catheter.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0026] occurrences matches {0..1} matches {    -- Left atrium monitoring – pulmonary artery flotation catheter with or without cardiac output measurement.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Central venous line.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0028] occurrences matches {0..1} matches {    -- Cardiopulmonary resuscitation after arrest in the past 24 hours (single precordial percussion not included).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Measurement of intracranial pressure.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Treatment of complicated metabolic acidosis/alkalosis.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Intravenous hyperalimentation.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0032] occurrences matches {0..1} matches {    -- Enteral feeding – through gastric tube or other GI route (e.g. jejunostomy).
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0033] occurrences matches {0..1} matches {    -- Single specific interventions in the ICU – naso or orotracheal intubation, introduction of a pacemaker, cardioversion, endoscopies, emergency surgery in the past 24 hours, gastric lavage.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0034] occurrences matches {0..1} matches {    -- Multiple specific interventions in the ICU – more than one as described above.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+									ELEMENT[at0035] occurrences matches {0..1} matches {    -- Specific interventions outside of ICU – surgery or diagnostic procedures.
+										value matches {
+											DV_ORDINAL matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0025] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- DV_ORDINAL
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- DV_ORDINAL
+						value matches {
+							DV_ORDINAL matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"TISS_28">
+					description = <"TISS_28">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"DV_ORDINAL">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Standard monitoring – Hourly vital signs, regular registration and calculation of fluid balance.">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Laboratory – Biochemical and microbiological investigations.">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Single medication, any route (IV, PO, IM, etc.).">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Multiple intravenous medications (more than 1 drug, single shots, or continuously).">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Routine dressing changes – Care and prevention of decubitus and daily dressing change.">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Frequent dressing changes (at least one time per each nursing shift) and/or extensive wound care.">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Care of drains (all except gastric tube).">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Mechanical ventilation – any form of mechanical or assisted ventilation with or without PEEP; with or without muscle relaxants; spontaneous breathing with PEEP.">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Supplementary ventilatory support – breathing spontaneously through endotracheal tube without PEEP; supplementary oxygen by any method except if mechanical ventilation parameters apply.">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Care of artificial airways – endotracheal tube or tracheostoma.">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Treatment for improving lung function – thorax physiotherapy, incentive spirometry, inhalation therapy, intratracheal suctioning.">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Hemofiltration techniques – dialytic techniques.">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Quantitative urine output measurement.">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Active diuresis (e.g. furosemide > 0.5 mg/kg/day for overload).">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Single vasoactive medication – any vasoactive drug.">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Multiple vasoactive medications – more than 1 vasoactive drug, disregard type and dose.">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Intravenous replacement of large fluid losses – fluid replacement > 3 litres per square metre per day, disregard type of fluid administered.">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Peripheral arterial catheter.">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"DV_ORDINAL">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0026"] = <
+					text = <"Left atrium monitoring – pulmonary artery flotation catheter with or without cardiac output measurement.">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Central venous line.">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Cardiopulmonary resuscitation after arrest in the past 24 hours (single precordial percussion not included).">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Measurement of intracranial pressure.">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Treatment of complicated metabolic acidosis/alkalosis.">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Intravenous hyperalimentation.">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Enteral feeding – through gastric tube or other GI route (e.g. jejunostomy).">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Single specific interventions in the ICU – naso or orotracheal intubation, introduction of a pacemaker, cardioversion, endoscopies, emergency surgery in the past 24 hours, gastric lavage.">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Multiple specific interventions in the ICU – more than one as described above.">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Specific interventions outside of ICU – surgery or diagnostic procedures.">
+					description = <"">
+				>
+			>
+		>
+	>
