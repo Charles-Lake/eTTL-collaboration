@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f8bbd538c924ff6b5b5245aa75e1ad62">
+		["MD5-CAM-1.0.1"] = <"251e7d82bed8ce0225fe23810fdf2dd1">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -596,6 +607,383 @@ ontology
 				>
 				["at0093"] = <
 					text = <"Tiss-76 score">
+					description = <"">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["at0000"] = <
+					text = <"TISS_28">
+					description = <"Točkovni seznam TISS 28, je bil razvit za potrebe vrednotenja težavnosti obravnave pacientov
+in s tem povezane obremenjenosti MS. S pomočjo točkovnega seznama TISS 28 se vsakega
+pacienta ocenjuje vsako delovno izmeno. Točkovni seznam TISS 28 opredeljuje intervencije ZN,
+ki se jih vrednoti z vrednostmi od 1 do 5 točk. Intervencije so razdeljene na sedem različnih
+sklopov (Standardne aktivnosti, Kardiovaskularna podpora, Specifične intervencije, Umetna
+ventilacija, Ledvična podpora, Nevrološka podpora, Podpora presnovi). V vseh sklopih skupaj
+se tako spremlja 28 različnih intervencij, ki se vrednotijo z vnaprej določenim številom točk.
+Skupni seštevek točk v eni izmeni lahko znaša največ 46 točk. Vsaka točka, ki jo ovrednoti
+točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljene točke ovrednotimo v minutah opravljenega dela MS in s tem izračunamo potrebe posameznega bolnika.">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Standardno spremljanje">
+					description = <"Standardno spremljanje (urna kontrola življenjskih funkcij, bilančni list).">
+				>
+				["at0006"] = <
+					text = <"Laboratorijske preiskave">
+					description = <"Biokemijske in mikrobiološke preiskave.">
+				>
+				["at0007"] = <
+					text = <"Eno zdravilo">
+					description = <"Eno zdravilo, katerakoli pot dajanja (IV, PO, IM)">
+				>
+				["at0008"] = <
+					text = <"Več kot eno zdravilo">
+					description = <"Več kot eno zdravilo, kontinuirana infuzija, posamezni bolusi.">
+				>
+				["at0009"] = <
+					text = <"Dnevne menjave obvez">
+					description = <"Nega in preprečevanje preležanin, dnevne menjave obvez.">
+				>
+				["at0010"] = <
+					text = <"Pogoste menjave obvez">
+					description = <"Pogoste menjave obvez (vsaj ena menjava v vsaki negovalni izmeni).">
+				>
+				["at0011"] = <
+					text = <"Nega drenaž">
+					description = <"Vse razen želočne sonde.">
+				>
+				["at0012"] = <
+					text = <"Mehanska ventilacija">
+					description = <"Kakršnakoli oblika mehanske ali podprte ventilacije, z ali brez pozitivnega tlaka ob koncu izdiha; z ali brez mišičnih relaksantov; spontano dihanje s pozitivnim tlakom ob koncu izdiha.">
+				>
+				["at0013"] = <
+					text = <"Dodatna ventilacijska podpora">
+					description = <"Spontano dihanje skozi endotrahealni tubus, brez pozitivnega tlaka ob koncu izdiha; dodajanje kisika po kateri koli metodi, razen kadar veljajo parametri mehanske ventilacije.">
+				>
+				["at0014"] = <
+					text = <"Nega umetnih dihalnih poti">
+					description = <"Endotrahealni tubus ali kanila.">
+				>
+				["at0015"] = <
+					text = <"Zdravljenje za izboljšanje pljučne funkcije">
+					description = <"Prsna fizioterapija, spirometrija z motivacijsko napravo, inhalacijska terapija, intratrahealna aspiracija.">
+				>
+				["at0016"] = <
+					text = <"Hemodializa">
+					description = <"Hemodializne tehnike
+">
+				>
+				["at0017"] = <
+					text = <"Kvantitativno merjenje diureze">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Aktivna diureza">
+					description = <"(npr. furosemid v odmerku > 0,5 mg/kg/dan zaradi preobremenitve s tekočino)">
+				>
+				["at0019"] = <
+					text = <"Eno vazokaktivno zdravilo">
+					description = <"Katerokoli vazooktivno zdravilo.">
+				>
+				["at0020"] = <
+					text = <"Več vazokaktivnih zdravil">
+					description = <"Več kot eno vazooktivno zdravilo, ne glede na vrsto ali odmerek.">
+				>
+				["at0021"] = <
+					text = <"Intravensko nadomeščanje velikih tekočinskih izgub (> 3 L/m²/dan)">
+					description = <"Nadomeščanje tekočin v količini več kot 3 litre na kvadratni meter telesne površine na dan, ne glede na vrsto aplicirane tekočine.">
+				>
+				["at0022"] = <
+					text = <"Periferna arterijska kanila.">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0026"] = <
+					text = <"Pljučna arterijska sonda">
+					description = <"plavajoči kateter v pljučni arteriji, z ali brez merjenja srčnega izliva">
+				>
+				["at0027"] = <
+					text = <"Centralna venska kanila">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Kardiopulmonalno oživljanje v zadnjih 24 urah">
+					description = <"(posamični udarec po prekordiju ni vključen).">
+				>
+				["at0029"] = <
+					text = <"Meritev intrakranialnega tlaka">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Zdravljenje zapletene acidoze/alkaloze">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Intravenska hiperalimentacija">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Enteralna prehrana">
+					description = <"Enteralna prehrana preko želodčne ali druge sonde (npr. nazojejunalna, jejunostoma).">
+				>
+				["at0033"] = <
+					text = <"Posamezna specifična intervencija v enoti intenzivne terapije">
+					description = <"Posamezna specifična intervencija v enoti intenzivne terapije (nazo- ali orotrahealna intubacija, kardioverzija, vstavitev srčnega spodbujevalnika, endoskopski posegi, nujni operativni posegi v zadnjih 24 h).">
+				>
+				["at0034"] = <
+					text = <"Več specifičnih intervencij v EIT">
+					description = <"(več kot ena zgoraj našteta)">
+				>
+				["at0035"] = <
+					text = <"Specifične intervencije izven EIT">
+					description = <"(operativni ali diagnostični posegi)">
+				>
+				["at0036"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"TISS-28">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"TISS-76">
 					description = <"">
 				>
 			>
