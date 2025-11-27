@@ -23,12 +23,12 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
 		["sl"] = <
 			language = <[ISO_639-1::sl]>
 			copyright = <"© openEHR Foundation">
-		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
 		>
 	>
 	other_details = <
@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"251e7d82bed8ce0225fe23810fdf2dd1">
+		["MD5-CAM-1.0.1"] = <"0d455c261d25904ce4853b3f828f06d5">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -222,6 +222,18 @@ definition
 									ELEMENT[at0092] occurrences matches {0..1} matches {    -- Tiss-28 score
 										value matches {
 											DV_COUNT matches {*}
+										}
+									}
+									ELEMENT[at0094] occurrences matches {0..1} matches {    -- Time of nurse's care
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::128]>
+												list = <
+													["1"] = <
+														units = <"min">
+													>
+												>
+											>
 										}
 									}
 									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Tiss-76 score
@@ -609,6 +621,10 @@ ontology
 					text = <"Tiss-76 score">
 					description = <"">
 				>
+				["at0094"] = <
+					text = <"Time of nurse's care">
+					description = <"">
+				>
 			>
 		>
 		["sl"] = <
@@ -984,6 +1000,10 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 				>
 				["at0093"] = <
 					text = <"TISS-76">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"*Time of nurse's care (en)">
 					description = <"">
 				>
 			>
