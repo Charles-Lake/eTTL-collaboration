@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fd62026cb200e266e7fc795105c78128",
+      "MD5-CAM-1.0.1" : "b9c0fc194f4f13d12eebbca6e975a75d",
       "PARENT:MD5-CAM-1.0.1" : "46ec22570a0aeb75b6e1fd37f3ebf3be"
     },
     "details" : {
@@ -413,7 +413,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "251e7d82bed8ce0225fe23810fdf2dd1"
+        "PARENT:MD5-CAM-1.0.1" : "0d455c261d25904ce4853b3f828f06d5"
       },
       "details" : {
         "en" : {
@@ -489,6 +489,72 @@
                       "nodeId" : "at0008.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0092.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0094.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "128" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "min" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0093.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -512,20 +578,38 @@
             "code" : "at0007.1",
             "text" : "Single medication - any route",
             "description" : "any route (IV, PO, IM, etc.)."
+          },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "Time of nurse's care",
+            "description" : "One TISS-28 point equals 10.6 minutes of each 8 h nurse's shift"
           }
         },
         "sl" : {
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "Več kot eno zdravilo",
-            "description" : "Več kot eno zdravilo, kontinuirana infuzija, posamezni bolusi"
-          },
           "at0008.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0008.1",
             "text" : "Več kot eno zdravilo",
             "description" : "Več kot eno zdravilo, kontinuirana infuzija, posamezni bolusi"
+          },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "Čas trajanja izvajanja zdravstvene nege",
+            "description" : "Ena točka TISS-28 je enaka 10,6 minutam vsake 8-urne izmene medicinske sestre."
+          },
+          "at0092.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0092.1",
+            "text" : "Ocena TISS-28",
+            "description" : ""
+          },
+          "at0093.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0093.1",
+            "text" : "Ocena TISS-76",
+            "description" : ""
           }
         }
       },
