@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"si.ezdrav">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a89ace1f05384a20983c872af3f58001">
+		["MD5-CAM-1.0.1"] = <"c29705b89b1e3d06150d534ce4a232f9">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -165,7 +165,7 @@ definition
 											0|[local::at0059]
 										}
 									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement.
+									ELEMENT[at0017] occurrences matches {0..1} matches {    -- Quantitative urine output measurement
 										value matches {
 											2|[local::at0060],
 											0|[local::at0061]
@@ -312,7 +312,7 @@ ontology
 					description = <"dialytic techniques.">
 				>
 				["at0017"] = <
-					text = <"Quantitative urine output measurement.">
+					text = <"Quantitative urine output measurement">
 					description = <"">
 				>
 				["at0018"] = <
@@ -689,7 +689,7 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 ">
 				>
 				["at0017"] = <
-					text = <"Kvantitativno merjenje diureze">
+					text = <"*Quantitative urine output measurement (en)">
 					description = <"">
 				>
 				["at0018"] = <
