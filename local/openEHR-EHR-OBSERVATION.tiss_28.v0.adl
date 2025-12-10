@@ -23,21 +23,21 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-		>
 		["sl"] = <
 			language = <[ISO_639-1::sl]>
 			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
+		["original_namespace"] = <"si.ezdrav">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d455c261d25904ce4853b3f828f06d5">
+		["MD5-CAM-1.0.1"] = <"a89ace1f05384a20983c872af3f58001">
 		["build_uid"] = <"af5a1cb9-0d94-3b5e-9304-e0676b2e0213">
 		["revision"] = <"1.0.0-alpha.1">
 	>
@@ -135,7 +135,7 @@ definition
 											0|[local::at0069]
 										}
 									}
-									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Peripheral arterial catheter.
+									ELEMENT[at0022] occurrences matches {0..1} matches {    -- Peripheral arterial catheter
 										value matches {
 											5|[local::at0070],
 											0|[local::at0071]
@@ -147,7 +147,7 @@ definition
 											0|[local::at0073]
 										}
 									}
-									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Central venous line.
+									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Central venous line
 										value matches {
 											2|[local::at0074],
 											0|[local::at0075]
@@ -177,19 +177,19 @@ definition
 											0|[local::at0063]
 										}
 									}
-									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Measurement of intracranial pressure.
+									ELEMENT[at0029] occurrences matches {0..1} matches {    -- Measurement of intracranial pressure
 										value matches {
 											4|[local::at0078],
 											0|[local::at0079]
 										}
 									}
-									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Treatment of complicated metabolic acidosis/alkalosis.
+									ELEMENT[at0030] occurrences matches {0..1} matches {    -- Treatment of complicated metabolic acidosis/alkalosis
 										value matches {
 											4|[local::at0080],
 											0|[local::at0081]
 										}
 									}
-									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Intravenous hyperalimentation.
+									ELEMENT[at0031] occurrences matches {0..1} matches {    -- Intravenous hyperalimentation
 										value matches {
 											3|[local::at0082],
 											0|[local::at0083]
@@ -224,21 +224,11 @@ definition
 											DV_COUNT matches {*}
 										}
 									}
-									ELEMENT[at0094] occurrences matches {0..1} matches {    -- Time of nurse's care
-										value matches {
-											C_DV_QUANTITY <
-												property = <[openehr::128]>
-												list = <
-													["1"] = <
-														units = <"min">
-													>
-												>
-											>
-										}
-									}
 									ELEMENT[at0093] occurrences matches {0..1} matches {    -- Tiss-76 score
 										value matches {
-											DV_COUNT matches {*}
+											DV_COUNT matches {
+												magnitude matches {|0..1|}
+											}
 										}
 									}
 								}
@@ -339,10 +329,10 @@ ontology
 				>
 				["at0021"] = <
 					text = <"Intravenous replacement of large fluid losses">
-					description = <"fluid replacement > 3 litres per square metre per day, disregard type of fluid administered.">
+					description = <"Fluid replacement > 3 litres per square metre per day, disregard type of fluid administered.">
 				>
 				["at0022"] = <
-					text = <"Peripheral arterial catheter.">
+					text = <"Peripheral arterial catheter">
 					description = <"">
 				>
 				["at0025"] = <
@@ -354,7 +344,7 @@ ontology
 					description = <"pulmonary artery flotation catheter with or without cardiac output measurement.">
 				>
 				["at0027"] = <
-					text = <"Central venous line.">
+					text = <"Central venous line">
 					description = <"">
 				>
 				["at0028"] = <
@@ -362,15 +352,15 @@ ontology
 					description = <"(single precordial percussion not included).">
 				>
 				["at0029"] = <
-					text = <"Measurement of intracranial pressure.">
+					text = <"Measurement of intracranial pressure">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Treatment of complicated metabolic acidosis/alkalosis.">
+					text = <"Treatment of complicated metabolic acidosis/alkalosis">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Intravenous hyperalimentation.">
+					text = <"Intravenous hyperalimentation">
 					description = <"">
 				>
 				["at0032"] = <
@@ -621,10 +611,6 @@ ontology
 					text = <"Tiss-76 score">
 					description = <"">
 				>
-				["at0094"] = <
-					text = <"Time of nurse's care">
-					description = <"">
-				>
 			>
 		>
 		["sl"] = <
@@ -720,10 +706,10 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 				>
 				["at0021"] = <
 					text = <"Intravensko nadomeščanje velikih tekočinskih izgub (> 3 L/m²/dan)">
-					description = <"Nadomeščanje tekočin v količini več kot 3 litre na kvadratni meter telesne površine na dan, ne glede na vrsto aplicirane tekočine.">
+					description = <"*Fluid replacement > 3 litres per square metre per day, disregard type of fluid administered. (en)">
 				>
 				["at0022"] = <
-					text = <"Periferna arterijska kanila.">
+					text = <"*Peripheral arterial catheter (en)">
 					description = <"">
 				>
 				["at0025"] = <
@@ -735,7 +721,7 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 					description = <"plavajoči kateter v pljučni arteriji, z ali brez merjenja srčnega izliva">
 				>
 				["at0027"] = <
-					text = <"Centralna venska kanila">
+					text = <"*Central venous line (en)">
 					description = <"">
 				>
 				["at0028"] = <
@@ -743,15 +729,15 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 					description = <"(posamični udarec po prekordiju ni vključen).">
 				>
 				["at0029"] = <
-					text = <"Meritev intrakranialnega tlaka">
+					text = <"*Measurement of intracranial pressure (en)">
 					description = <"">
 				>
 				["at0030"] = <
-					text = <"Zdravljenje zapletene acidoze/alkaloze">
+					text = <"*Treatment of complicated metabolic acidosis/alkalosis (en)">
 					description = <"">
 				>
 				["at0031"] = <
-					text = <"Intravenska hiperalimentacija">
+					text = <"*Intravenous hyperalimentation (en)">
 					description = <"">
 				>
 				["at0032"] = <
@@ -1000,10 +986,6 @@ točkovni seznam TISS se nato enači z 10,6 minutami dela MS. Tako lahko dobljen
 				>
 				["at0093"] = <
 					text = <"TISS-76">
-					description = <"">
-				>
-				["at0094"] = <
-					text = <"*Time of nurse's care (en)">
 					description = <"">
 				>
 			>
